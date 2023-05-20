@@ -1,11 +1,9 @@
 body {
-  background-image: url("./images/background.jpg");
-  background-color: #1d3557;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  color: whitesmoke;
-  text-shadow: 2px 2px 5px #90e0ef;
+  color: rgb(255, 255, 255);
   font-family: "Alegreya";
   padding-bottom: 120px;
 }
@@ -21,20 +19,20 @@ body {
 
 
 h1 {
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   margin-top: 40px;
   font-size: 50px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h2 {
-  color: whitesmoke;
-  font-family: 'Roboto Mono', monospace;
+  color: rgb(0, 0, 0);
+  font-family: 'Fira Sans', sans-serif;
 }
 
 p {
-  color: whitesmoke;
-  font-family: 'Roboto Mono', monospace;
+  color: rgb(0, 0, 0);
+  font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -101,12 +99,12 @@ ul {
 /*=======================================================*/
 
 a:link {
-  color: #00c2fd;
+  color: rgb(255, 139, 139);
   -webkit-text-stroke: #1d3557;
 }
 
 a:visited {
-  color: #00ee3b;
+  color: #6d6d6d;
 }
 
 
@@ -125,7 +123,6 @@ footer {
   height: 15px;
   padding: 30px;
   position: center;
-  background-image: linear-gradient(transparent, #1d3557);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -176,7 +173,7 @@ section.bg-color {
   width: 25%;
   height: 15%;
   padding: 20px;
-  border: 1px solid rgb(255, 239, 209);
+  border: 1px solid rgb(255, 139, 139);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -203,12 +200,12 @@ section.bg-color {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px rgb(255, 139, 139);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(whitesmoke, black);
+  background: linear-gradient(rgb(255, 139, 139), rgb(255, 255, 255));
   border-radius: 10px;
 }
 
@@ -222,7 +219,7 @@ form {
   box-shadow: 5px 5px 5px #90e0ef;
   display: block;
   margin: 0 auto !important;
-  border-color: solid whitesmoke;
+  border-color: solid rgb(255, 139, 139);
   background-image: linear-gradient(transparent, #1d3557);
 }
 
@@ -230,7 +227,7 @@ form label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
-  color:whitesmoke;
+  color:rgb(0, 0, 0);
   font-family: "Alegreya";
 }
 
@@ -241,7 +238,7 @@ form input[type=text] {
   width: 90%;
   background-color: lightgrey;
   border-radius: 5px;
-  box-shadow: 3px 3px 3px #90e0ef;
+  box-shadow: 3px 3px 3px rgb(255, 139, 139)0ef;
 }
 
 form button {
@@ -250,7 +247,7 @@ form button {
   border: 0;
   font-family: "Alegreya";
   font-size: 16px;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   text-shadow: 2px 2px 5px #90e0ef;
   margin: 15px 8px 10px 0;
   background-image: linear-gradient(black, #1d3557);

@@ -5,7 +5,6 @@ import Welcome from '../Welcome/Welcome'
 import About from '../About/About'
 import Projects from '../Projects/Projects'
 import Contact from '../Contact/Contact'
-import Inquiries from '../Inquiries/Inquiries'
 
 
     function Nav() {
@@ -43,18 +42,12 @@ import Inquiries from '../Inquiries/Inquiries'
                             Contact
                             </NavLink>
                         </li>
-                            <li className="nav-item">
-                            <NavLink to="/Inquiries" className="nav-links link" onClick={closeMenu}>
-                            Inquiries
-                            </NavLink>
-                        </li>
                     </ul>
                 </nav>
                 <Route exact path='/Work' component={Welcome}/>
                 <Route exact path='/About' component={About}/>
                 <Route exact path='/Projects' component={Projects}/>
                 <Route exact path='/Contact' component={Contact}/>
-                <Route exact path='/Inquiries' component={Inquiries}/>
             </BrowserRouter>
         )
 }

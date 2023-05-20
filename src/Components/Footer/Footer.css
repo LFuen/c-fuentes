@@ -1,12 +1,10 @@
 .foot {
     display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-shadow: 2px 2px rgb(0, 0, 0) ;
+    justify-content: left; 
     padding: 10px;
     position: fixed;
     bottom: 0;
-    height: 100px;
+    height: 30px;
     width: 100%;
 }
 
