@@ -24,6 +24,11 @@ a:focus {
     height: fit-content;
 }
 
+#About {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
 @keyframes animated-border {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.589);

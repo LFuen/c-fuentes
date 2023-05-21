@@ -6,6 +6,7 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Alegreya";
   padding-bottom: 120px;
+  overflow: hidden;
 }
 
 .textShadow {
@@ -33,7 +34,7 @@ h2 {
 p {
   color: rgb(0, 0, 0);
   font-family: 'Fira Sans', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 article {
@@ -123,27 +124,22 @@ footer {
   height: 15px;
   padding: 30px;
   position: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
   display: flex;
   justify-content: center;
 }
 
 .flexRow {
-  display: flex;
   flex-direction: row;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   align-items: center;
-  justify-content: center;
 }
 
 .flexColumn {
   display: flex;
-  width: 75%;
+  width: 100%;
   flex-direction: column;
   margin-bottom: 5px;
-  margin: auto;
   align-items: center;
   justify-content: center;
   padding: 25px 10px 25px 10px;
@@ -155,9 +151,6 @@ footer {
   margin: 10px;
 }
 
-img {
-  width: 100%;
-}
 
 .regSize {
   width: 40px;
@@ -179,18 +172,6 @@ section.bg-color {
   text-align: center;
 }
 
-.centerImage {
-    padding: 1px;
-    border: 3px solid  whitesmoke;
-    border-radius: 15px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    height: 25%;
-    box-shadow: 5px 5px 5px #90e0ef;
-}
-
 /*=======================================================*/
 /*=======================================================*/
 /*Scrollbar customization*/
@@ -208,68 +189,6 @@ section.bg-color {
   background: linear-gradient(rgb(255, 139, 139), rgb(255, 255, 255));
   border-radius: 10px;
 }
-
-/*=======================================================*/
-/*=======================================================*/
-/* Submission for for visitors */
-
-form {
-  width: 50%;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #90e0ef;
-  display: block;
-  margin: 0 auto !important;
-  border-color: solid rgb(255, 139, 139);
-  background-image: linear-gradient(transparent, #1d3557);
-}
-
-form label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 5px;
-  color:rgb(0, 0, 0);
-  font-family: "Alegreya";
-}
-
-form input[type=text] {
-  color: #000;
-  font-size: 15px;
-  margin-bottom: 20px;
-  width: 90%;
-  background-color: lightgrey;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px rgb(255, 139, 139)0ef;
-}
-
-form button {
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: 0;
-  font-family: "Alegreya";
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 5px #90e0ef;
-  margin: 15px 8px 10px 0;
-  background-image: linear-gradient(black, #1d3557);
-  box-shadow: 3px 3px 3px #90e0ef;
-}
-
-fieldset {
-  padding: 10px 12px;
-  margin: 10px 0 20px 0;
-  border-radius: 10px;
-}
-
-textarea {
-  width: 90%;
-  height: 200px;
-  box-shadow: 5px 5px 5px #90e0ef;
-  background-color: lightgrey;
-  border-radius: 5px;
-}
-
-/*=======================================================*/
-/*=======================================================*/
 
 
 @media screen and (max-width: 1020px) {

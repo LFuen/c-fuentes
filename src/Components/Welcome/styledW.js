@@ -19,15 +19,6 @@ const Images = styled.div`
     width: fit-content
 }
 
-.badge:hover {
-    animation-duration: .3s, 1.5s;
-    animation-delay: 0s, .3s;
-    animation-timing-function: ease-out, ease-in-out;
-    animation-iteration-count: 1, infinite;
-    animation-fill-mode: forwards;
-    animation-direction: normal, alternate;
-}
-
 @media screen and (max-width: 1020px) {
     float: none;
     text-align: center;

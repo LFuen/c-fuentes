@@ -14,11 +14,55 @@
 
 .margin {
     margin-top: 100px !important;
+    text-align: center;
 }
 
 .welcomeLoad {
     animation: fadeIn;
 }
+
+#Info {
+    color: rgb(0, 0, 0);
+    font-family: 'Wix Madefor Display', monospace;
+    justify-content: left;
+    display: grid;
+    background-color: rgb(255, 139, 139);
+    border-radius: 10%;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.welcomep {
+    z-index: 1;
+    width: 50%;
+}
+
+.centerImage {
+    padding: 1px;
+    border: 3px solid  rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    box-shadow: 2px 2px 2px rgb(255, 139, 139);
+}
+
+.headshot {
+    position: fixed;
+    z-index: 2;
+    justify-self: right;
+}
+
+span {
+    display: flex;
+    justify-content: right;
+    margin-right: 20%;
+}
+
+.name {
+    margin-bottom: 100px;
+    justify-content: center;
+  }
 
 @media screen and (max-width: 1020px) {
     #Welcome {

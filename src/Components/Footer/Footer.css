@@ -8,6 +8,12 @@
     width: 100%;
 }
 
+.footerp {
+    margin: 0 0 10px 0;
+    font-family: 'Wix Madefor Display', monospace;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 1020px) {
     .foot{
     display: none;
