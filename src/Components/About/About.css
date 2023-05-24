@@ -44,7 +44,15 @@ a:focus {
 }
 
 @media screen and (max-width: 1020px) {
-    .margin {
-        margin-top: 20px;
+    #Top {
+        margin: 0 0 20 0;
+        text-align: center;
+        font-size: 40px;
+    }
+    .name {
+        margin: 0 auto 0 auto;
+    }
+    #Welcome {
+        margin: 0 auto 90px auto;
     }
 }

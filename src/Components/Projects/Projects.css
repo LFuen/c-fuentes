@@ -33,6 +33,11 @@ font-family: 'Big Shoulders Stencil Text', cursive;
     text-align: center;
 }
 
+.whatsapp {
+    max-width: 100%;
+    height: auto;
+}
+
 
 @media screen and (max-width: 1020px) {
     .describe {

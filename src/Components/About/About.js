@@ -11,14 +11,15 @@ class About extends Component{
             
             <div className='flexColumn'>
             <p className='item'>ABOUT ME SECTION WHERE A PARAGRAPH GOES</p>
-            <p>Under here is where I've listed what I do</p>
+            <p>I have training in the following areas:</p>
             </div>
             
             <div className='borderOne' id='services'> 
-                <p><b>Front End UI Design</b></p>
-                <p><b>Application Development and Testing</b></p>
-                <p><b>Systems Integration</b></p>
-                <p><b>SEO</b></p>
+                <p><b>SQL</b></p>
+                <p><b>Excel</b></p>
+                <p><b>Tableau</b></p>
+                <p><b>Figma</b></p>
+                <p><b>Python (for Data Analysis)</b></p>
             </div>
             </section>
         </AboutDiv>
