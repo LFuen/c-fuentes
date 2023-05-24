@@ -14,12 +14,22 @@ font-family: 'Big Shoulders Stencil Text', cursive;
     }
 }
 
+#Projects {
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    font-weight: bold;
+}
+
+.projectSect {
+    margin: 0 0 20 0; 
+}
+
 .proj:hover {
     animation: project 2s infinite;
 }
 
 .skills {
-    color:rgb(53, 255, 17);
+    color:rgb(255, 17, 17);
     text-align: center;
 }
 
@@ -33,7 +43,7 @@ font-family: 'Big Shoulders Stencil Text', cursive;
     text-align: center;
 }
 
-.whatsapp {
+.proj img {
     max-width: 100%;
     height: auto;
 }

@@ -20,7 +20,7 @@ class Contact extends Component{
                                 href='https://www.linkedin.com/in/cara-fuentes-2033a41b2/' 
                                 target='_blank' 
                                 rel='noreferrer'>
-                                <span title='Lili Fuentes on LinkedIn'>
+                                <span title='Cara Fuentes on LinkedIn'>
                                     <img    
                                         className='regSize' 
                                         alt='LinkedIn' 
@@ -31,13 +31,13 @@ class Contact extends Component{
                         
                         <p>
                             <a
-                                href='mailto:caraforlizzi@gmail.com' 
+                                href='mailto:Cara@CFuen.com' 
                                 target='_blank' 
                                 rel='noreferrer'>
-                                <span title='Email Me'>
+                                <span title='Cara@CFuen.com'>
                                     <img 
                                         className='regSize' 
-                                        alt='E-Mail' 
+                                        alt='Cara@CFuen.com' 
                                         src={email}/>
                                 </span>
                             </a>

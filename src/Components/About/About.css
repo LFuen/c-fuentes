@@ -29,6 +29,12 @@ a:focus {
     font-family: 'Fira Sans', sans-serif;
 }
 
+.name {
+    font-size: 50px;
+    color: rgb(255, 139, 139);
+    font-weight: bold;
+}
+
 @keyframes animated-border {
     0% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.589);

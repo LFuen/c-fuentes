@@ -20,7 +20,9 @@ class Welcome extends Component {
               me take a minute here to share what it is that I do.
             </p>
             <p>
-              I am a Data Analyst with a history in Mental Health Therapy.....
+              I am a Data Analyst with a history in Mental Health Therapy.....writing more and more to see 
+              where this will lead on the page itself to maybe see if it will go beyond the div scope and I 
+              think I fixed it now
             </p>
           </div>
           <div className="headshot">
@@ -28,19 +30,6 @@ class Welcome extends Component {
                 <img className="centerImage" alt="Welcome" src={smile} />
             </span>
           </div>
-        </div>
-        <div className="borderOne" id="versed">
-          <p>
-            <b>Specialties</b>
-          </p>
-          <p>
-            <b>Specialties</b>
-          </p>
-        </div>
-        <div>
-          <Images>
-            <img className="badge" src={figma} alt="Figma" />
-          </Images>
         </div>
       </WelcomeDiv>
     );

@@ -6,7 +6,7 @@ body {
   color: rgb(255, 255, 255);
   font-family: "Alegreya";
   padding-bottom: 120px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .textShadow {
@@ -138,6 +138,7 @@ footer {
   justify-content: center;
   padding: 25px 10px 25px 10px;
   font-size: 18px;
+  text-align: center;
 }
 
 .item {

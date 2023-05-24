@@ -30,11 +30,13 @@
     border-radius: 10%;
     padding: 0 0 0 30px;
     position: relative;
+    margin: 0 5%;
 }
 
 .welcomep {
     z-index: 1;
     width: 50%;
+    padding: 0 20px;
 }
 
 .centerImage {
