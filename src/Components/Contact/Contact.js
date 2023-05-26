@@ -11,16 +11,16 @@ class Contact extends Component{
         return (
         <ContactDiv className='App'>
             <article className='margin'>
-                <h1 id='Contact'>Contact</h1>
+                <h1 id='Contact' className="text-[#ff8b8b]" >Contact</h1>
                 <div>
                     <p>You can find links to my profile and E-Mail below:</p>
-                    <div className='bg-color'>
+                    <div className='py-25 px-10'>
                         <p>
                             <a   
                                 href='https://www.linkedin.com/in/cara-fuentes-2033a41b2/' 
                                 target='_blank' 
                                 rel='noreferrer'>
-                                <span title='Cara Fuentes on LinkedIn'>
+                                <span title='Cara Fuentes on LinkedIn' className="justify-center">
                                     <img    
                                         className='regSize' 
                                         alt='LinkedIn' 

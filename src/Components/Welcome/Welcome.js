@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import smile from "./images/Cara.jpg";
-import figma from "./icons/figma.png";
 
 import "./Welcome.css";
 import { WelcomeDiv, Images } from "./styledW";
@@ -12,9 +11,8 @@ class Welcome extends Component {
         <header id="Top" className="margin">
           <h1 className="name">Cara Fuentes</h1>
         </header>
-        <h2 id="Welcome">Welcome</h2>
         <div className="flexRow" id="Info">
-          <div className="flexColumn welcomep">
+          <div className="flexColumn welcomep w-1/2">
             <p>
               My name is Cara and I want to thank you for visiting my page. Let
               me take a minute here to share what it is that I do.
