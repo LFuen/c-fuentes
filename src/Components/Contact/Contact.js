@@ -11,10 +11,10 @@ class Contact extends Component{
         return (
         <ContactDiv className='App'>
             <article className='margin'>
-                <h1 id='Contact' className="text-[#ff8b8b]" >Contact</h1>
+                <h1 id='Contact' className="name" >Contact</h1>
                 <div>
-                    <p>You can find links to my profile and E-Mail below:</p>
-                    <div className='py-25 px-10'>
+                    <p>You can find the link to my profile and E-Mail below:</p>
+                    <div className='py-25 px-10 flexRow'>
                         <p>
                             <a   
                                 href='https://www.linkedin.com/in/cara-fuentes-2033a41b2/' 

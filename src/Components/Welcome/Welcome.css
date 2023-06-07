@@ -21,40 +21,29 @@
     animation: fadeIn;
 }
 
-#Info {
+.info {
     color: rgb(0, 0, 0);
     font-family: 'Wix Madefor Display', monospace;
-    justify-content: left;
-    display: grid;
-    background-color: rgb(255, 139, 139);
+    align-content: center;
+    background: rgb(233,120,143);
+    background: radial-gradient(circle, rgba(233,120,143,1) 55%, rgba(99,102,115,1) 100%);
     border-radius: 10%;
-    padding: 0 0 0 30px;
-    position: relative;
-    margin: 0 5%;
+    margin: 0 25%;
 }
 
 .welcomep {
-    z-index: 1;
-    width: 50%;
+    max-width: 75%;
     padding: 0 20px;
+    margin: auto;
 }
 
 .centerImage {
+    max-width: 50%;
     padding: 1px;
     border: 3px solid  rgb(255, 255, 255);
     border-radius: 15px;
-    display: flex;
-    width: 60%;
-    height: 60%;
     box-shadow: 2px 2px 2px rgb(255, 139, 139);
 }
-
-.headshot {
-    position: fixed;
-    z-index: 2;
-    justify-self: right;
-}
-
 
 .name {
     margin-bottom: 100px;

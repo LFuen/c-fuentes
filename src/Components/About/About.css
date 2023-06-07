@@ -9,15 +9,10 @@ a:visited {
     color: #1dcaff;
 }
 
-
-a:active {
-    color: rgb(104, 0, 0);
-}
-
 a:hover,
 a:focus {
-    color: rgb(255, 115, 0);
-    text-shadow: 2px 2px rgb(51, 255, 0);
+    color: rgb(60, 59, 58);
+    text-shadow: 2px 2px rgb(235, 139, 139);
     background-size: 100%;
     border-radius: 50px;
     width: fit-content;
@@ -31,7 +26,7 @@ a:focus {
 
 .name {
     font-size: 50px;
-    color: rgb(255, 139, 139);
+    color: rgba(233,120,143,1);
     font-weight: bold;
 }
 
