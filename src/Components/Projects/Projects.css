@@ -45,5 +45,15 @@ hr {
     .describe {
         width: 80%;
         font-size: medium;
+        font-weight: bold;
+    }
+
+    .info, .projLink, .projTitle {
+        width: 80%;
+        margin: 20PX auto;
+    }
+
+    a, .projLink {
+        font-size: small !important;
     }
 }

@@ -16,7 +16,7 @@ class Projects extends Component {
           Projects
         </h1>
         <section className="flexColumn projectSect">
-          <h2>Comparative Study of Countries</h2>
+          <h2 className="projTitle">Comparative Study of Countries</h2>
           <div className="borderOne flexRow proj">
             <a
               href="https://public.tableau.com/views/FuentesProjectTableau/ComparativeStudy?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
@@ -27,7 +27,7 @@ class Projects extends Component {
             </a>
           </div>
           <div>
-            <p>
+            <p className="projLink">
               {" "}
               You can click
               <a
@@ -61,7 +61,7 @@ class Projects extends Component {
             </a>
           </div>
           <div>
-            <p>
+            <p className="projLink">
               {" "}
               You can click
               <a
@@ -94,7 +94,7 @@ class Projects extends Component {
               <img src={sql} alt="SQL" />
             </a>
           </div>
-          <p>
+          <p className="projLink">
             {" "}
             You can click
             <a
@@ -125,7 +125,7 @@ class Projects extends Component {
               <img src={grill} alt="Grill House" />
             </a>
           </div>
-          <p>
+          <p className="projLink">
             {" "}
             You can click
             <a
@@ -155,7 +155,7 @@ class Projects extends Component {
               <img src={whatsapp} alt="WhatsApp" />
             </a>
           </div>
-          <p>
+          <p className="projLink">
             You can click
             <a href="https://s3.amazonaws.com/cfuen.com/WhatsApp+Project+Fuentes.docx">
               {" "}
@@ -178,7 +178,7 @@ class Projects extends Component {
               <img src={canteen} alt="Canteen Ordering" />
             </a>
           </div>
-          <p>
+          <p className="projLink">
             {" "}
             You can click
             <a
