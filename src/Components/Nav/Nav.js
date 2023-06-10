@@ -23,7 +23,7 @@ import Contact from '../Contact/Contact'
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/Work" className="nav-links link" onClick={closeMenu}>
+                            <NavLink to="/Welcome" className="nav-links link" onClick={closeMenu}>
                             Welcome
                             </NavLink>
                         </li>
