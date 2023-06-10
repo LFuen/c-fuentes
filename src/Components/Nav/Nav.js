@@ -44,7 +44,7 @@ import Contact from '../Contact/Contact'
                         </li>
                     </ul>
                 </nav>
-                <Route exact path='/Work' component={Welcome}/>
+                <Route exact path='/Welcome' component={Welcome}/>
                 <Route exact path='/About' component={About}/>
                 <Route exact path='/Projects' component={Projects}/>
                 <Route exact path='/Contact' component={Contact}/>
