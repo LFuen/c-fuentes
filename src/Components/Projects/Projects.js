@@ -41,7 +41,7 @@ class Projects extends Component {
               to download a copy of this project, or click the image above.
             </p>
             <p className="describe">
-              The objective of this project was to help and insurance company
+              The objective of this project was to help an insurance company
               compare various parameters such as income, life insurance share,
               market share, penetration, ratio of reinsurance accepted, and
               ratio of different countries using two sample datasets given.
