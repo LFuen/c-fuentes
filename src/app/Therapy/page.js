@@ -129,7 +129,7 @@ export default function Therapy() {
 				</Col>
 				<Col>
 					<Link href="/ContactForm">
-						<Button className={styles.ctaButton}>Let's Begin</Button>
+						<Button className={styles.ctaButton}>Let&#39;s Begin</Button>
 					</Link>
 				</Col>
 			</Row>
