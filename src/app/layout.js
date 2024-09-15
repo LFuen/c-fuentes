@@ -7,7 +7,6 @@ import Script from "next/script";
 
 
 const inter = Inter({ subsets: ["latin"] });
-const moderustic = Moderustic({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
 const merienda = Merienda({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800", "900"] });
 const yesevaOne = Yeseva_One({ subsets: ["latin"] });
 
