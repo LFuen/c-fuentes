@@ -1,0 +1,382 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Moderustic", sans-serif;
+    width: 100%;  
+    padding: 0;
+}
+
+.mentalHealth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('images/2024.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: start;
+    text-align: center;
+    width: 100%;
+    z-index: 0;   
+    padding: 6rem 0 4rem 0;
+  }
+
+  .mentalHealth::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(white, rgba(255, 255, 255, 0.503));
+    opacity: .6;
+  }
+
+  .quote {
+    font-size: 3.3rem;
+    color: rgb(76, 76, 76);
+    padding: 4rem 8rem 2rem 8rem;
+    z-index: 1;
+    font-family: "Yeseva One", serif;
+    font-style: normal;
+  }
+
+  .ctaButton {
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    font-size: 1.2rem;
+    border: none;
+    color: #ffffff;
+    background-color: #ff8dab;
+    text-decoration: none;    
+    z-index: 1;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ffffff;
+    color: #ff8dab;
+
+  }
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: "Yeseva One", serif;
+    font-size: 4rem;
+    color: rgb(105, 105, 105);
+    margin-top: 5rem;
+}
+
+.techniqueTitle h2 {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(255, 139, 139);
+    padding-top: 2rem;
+}
+
+
+.techniqueArticle {
+    background-color: #F7F7F8;
+    padding: 1rem 3rem;
+    margin: 5rem 8rem;
+    border-radius: 5rem;
+    position: relative;
+}
+
+.techniqueRow {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 2rem 0;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.techniqueColA {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 2rem;
+    justify-content: center;
+    width: 50%;
+}
+
+.techniqueColB {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-right: 2rem;
+    width: 50%;
+}
+
+.left {
+    padding-left: 2rem !important;
+}
+
+.techniqueCard {
+    margin-bottom: 1.5rem;
+    font-family: "Moderustic", sans-serif;
+    color: rgb(105, 105, 105);
+    border-radius: 0;
+    border: none;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.cardHeader {
+    background-color: #ffffff;
+    color: #ff8dab;
+    font-weight: bolder;
+    border-radius: 0 !important;
+    border: none;
+}
+
+
+.techniqueCol p {
+    color: #ff8dab;
+}
+
+.diamondContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 8rem;
+    align-items: center;
+    color: #696969;
+    font-family: "Yeseva One", serif;
+    font-style: italic;
+    font-size: 2.7rem;
+  }
+  
+  .diamondBorder {
+    position: relative;
+    padding: 2rem;
+    border-top: .5rem solid #ff8282;
+    border-bottom: .5rem solid #ff8282;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .diamondBorder::before,
+  .diamondBorder::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ff8282;
+    transform: rotate(45deg);
+  }
+  
+  .diamondBorder::before {
+    top: -1rem;
+    left: -1rem;
+  }
+  
+  .diamondBorder::after {
+    bottom: -1rem;
+    right: -1rem;
+  }
+
+  .cardTitle {
+    display: flex;
+    justify-content: center  ;
+    font-size: 1.5rem;
+}
+
+.treatHeader {
+    display: flex;
+    background-color: #ff8dab;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgb(87, 87, 87);
+    font-weight: bolder;
+    font-size: 2.3rem;
+    justify-content: center ;
+    border-radius: 0 !important;
+    border: none;
+}
+
+.treatCard{
+    border: 3px solid #ff8dab;
+    margin: 2rem 6rem;
+    font-family: "Moderustic", sans-serif;
+    color: rgb(105, 105, 105);
+    border-radius: 0;
+}
+
+.treatCol {
+    font-size: 1.8rem;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-wrap: wrap;
+}
+
+.treatTopRow {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.treatRow {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.topBlurb {
+    font-size: 1.3rem;
+    color: #696969;
+    padding: 1rem 2rem;
+    margin: 6rem 4rem 0 4rem;
+    align-items: center;
+}
+
+.topBlurb img {
+    width: 100%;
+    height: auto;
+    border-radius: 4rem;
+}
+
+.midBlurb {
+    font-size: 1.3rem;
+    color: #696969;
+    padding: 1rem 2rem;
+    margin: 2rem 4rem;
+    align-items: center;
+}
+
+.midBlurb img {
+    width: 100%;
+    height: auto;
+    border-radius: 4rem;
+}
+
+@media (max-width: 1250px) {
+    .techniqueArticle {
+        margin: 3rem 3rem;
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .quote {
+        font-size: 2.5rem;
+    }
+
+    .treatCol {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .topBlurb {
+        margin: 1rem 1.5rem;
+        padding: 0;
+    }
+
+    .midBlurb {
+        margin: 1rem 1.5rem;
+        padding: 0;
+    }
+    
+    .topBlurb img {
+        width: 100%;
+        height: auto;
+        border-radius: 3rem;
+    }
+    
+    .midBlurb img {
+        width: 100%;
+        height: auto;
+        border-radius: 3rem;
+    }
+
+    .blurbRow {
+        margin: 0 1rem;
+        flex-direction: column;
+    }
+
+    .blurbRow img {
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .techniqueRow {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .techniqueList {
+        margin-bottom: 0;
+    }
+
+    .techniqueColA {
+        width: 100%;
+        padding-right: 2rem;
+    }
+
+    .techniqueColB {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    .treatCol {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .treatRow {
+        flex-direction: column;
+    }
+
+    .treatCol {
+        width: 100% !important;
+    }
+
+    .techniqueArticle {
+        margin: 2rem 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .diamondContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
+    .techniqueTitle h2 {
+        font-size: 1.3rem;
+    }
+
+    .techniqueArticle {
+        margin: 3rem 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .quote {
+        font-size: 2rem;
+        color: rgb(76, 75, 75);
+        padding: 2rem 2rem 0 2rem;
+      }
+
+      .treatCard {
+        margin: 0 1rem 1.5rem 1rem;
+      }
+
+      .techniqueTitle h2 {
+        font-size: 3rem;
+    }
+}

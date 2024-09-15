@@ -1,0 +1,224 @@
+.navbar {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #fff2f2;
+    border-bottom: 2px solid rgb(255, 139, 139);
+    z-index: 1;    
+    top: 0;
+    position: sticky;
+    padding-top: .5rem;
+    width: 100%;
+}
+
+.navRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .8rem 2rem;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.navColA
+.navColB {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.navColB {
+    margin-right: 3rem;
+}
+
+.navbar a {
+    color:rgb(105, 105, 105);
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(255, 139, 139);
+    font-family: "Moderustic", sans-serif;
+    padding-top: .3rem;
+}
+
+.link:visited {
+    color:rgb(105, 105, 105);
+    text-shadow: #1dcaff;
+}
+
+.link:active {
+    color:rgb(206, 206, 206);
+    text-shadow: #7a1212;
+}
+
+.link:hover, .link:focus {
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    color: #ff1d7b;
+    text-shadow: 2px 2px 6px rgb(255, 139, 139);
+}
+
+.ctaButton {
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffffff;
+    background-color: #ff8dab;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ffffff;
+    color: #ff8dab;
+    box-shadow: 0 0 1px rgb(255, 139, 139);
+  }
+
+
+
+ul.navMenu {
+    padding: 0;
+    margin: .8rem auto;
+}
+
+
+.fa-firstdraft {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.navMenu {
+    display: flex;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1.3rem;
+    list-style: none;
+    text-align: center;
+    width: fit-content;
+    align-items: center;
+}
+
+.navItem {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.navItem.dropdown ul.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: none;
+    padding: 0 ;
+    margin: 0;
+    list-style: none;
+}
+
+.navItem.dropdown:hover ul.dropdownMenu {
+    display: block;
+}
+
+.navItem.dropdown ul.dropdownMenu li {
+    padding: .8rem 1.3rem;
+}
+
+.navItem.dropdown ul.dropdownMenu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+}
+
+.navItem.dropdown ul.dropdownMenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.navItem :last-child {
+    margin-left: 1rem;
+}
+
+.bi-list {
+    color: rgb(255, 139, 139);
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1020px) {
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: .9;
+        transition: all 0.5s ease;
+    }
+    
+    .navMenu.active {
+        background: #ffffff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    
+    .navLinks {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    
+    .navLinks:hover {
+        background-color: #2e2e2e;
+        border-radius: 10;
+    }
+    
+    .menuIcon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .bi-x {
+        color: rgb(255, 139, 139);
+        font-size: 2rem;
+    }
+    
+    .navLinksMobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #fff2f2;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    
+    .navLinksMobile:hover {
+        background: #fff;
+        color: #6999c3;
+        transition: 250ms;
+    }
+
+    .navColA
+    .navbar {
+        display: none;
+    }
+}

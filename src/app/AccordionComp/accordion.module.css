@@ -1,0 +1,26 @@
+.accordionContainer {
+    padding: 3rem 5rem 6rem 5rem;
+    font-family: "Moderustic", sans-serif;
+    border: none;
+}
+
+.accordionContainer p{
+    border: none !important;
+    color: #696969;
+}
+
+.accordionHeader button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #ff8dab;
+}
+
+
+
+.accordionHeader button:focus {
+    box-shadow: none;
+}
+
+.accordionHeader button::after {
+    background-color: #ffffff !important; 
+    border-radius: 2rem;
+}

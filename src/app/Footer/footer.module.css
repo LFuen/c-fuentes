@@ -1,0 +1,65 @@
+.foot {
+    background-color: #fff2f2;
+    color: rgb(105, 105, 105);
+    font-family: "Moderustic", sans-serif;
+}
+
+.footerRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.footerA {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.footerLogo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.footerB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+  .contact {
+    padding: 1rem;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .address {
+    text-align: center;
+  }
+
+  .socials {
+    padding: 1rem;
+  }
+
+  .socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }

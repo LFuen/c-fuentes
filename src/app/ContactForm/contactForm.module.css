@@ -1,0 +1,182 @@
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Moderustic", sans-serif;
+    background-color: #F7F7F8;
+    padding: 3rem;
+    margin:  0 2rem;
+    border-radius: 4rem 1rem 4rem 1rem;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 10rem 0;
+    font-family: "Moderustic", sans-serif;
+    flex-direction: column  ;
+}
+
+.formContainer h2 {
+    font-size: 2.5rem;
+    font-family: "Moderustic", sans-serif;
+    margin-bottom: 5rem;
+}
+
+.formContainer h6 {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: rgb(105, 105, 105);
+}
+
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formRows {
+    width: 100%;
+}
+
+.formRows input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ff8dab;
+    border-radius: 0;
+}
+
+.formRows input:focus {
+    outline: none;
+    border-bottom: 4px solid #ff8dab;
+    box-shadow: none;
+}
+
+.formRows input::placeholder {
+    color: #e1e1e1;
+}
+
+.formRows label {
+    color: rgb(105, 105, 105);
+}
+
+.formRowMessage {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formRowMessage label {
+    color: rgb(105, 105, 105);
+}
+
+.formRowMessage textarea {
+    width: 100%;
+    border: 1px solid #ff8dab;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.formRowMessage textarea:focus {
+    outline: none;
+    border: 2px solid #ff8dab;
+    box-shadow: none;
+}
+
+.formRowMessage textarea::placeholder {
+    color: #e1e1e1;
+}
+
+.formGroupService {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formGroupService label {
+    color: rgb(105, 105, 105);
+}
+
+.services {
+    margin: 1.5rem .5rem;
+    width: 100%;
+}
+
+.services input:checked {
+    background-color: #ff8dab;
+    border: none;
+}
+
+.services input:focus {
+    box-shadow: none;
+}
+
+.services label {
+    margin-left: 2rem;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    background-color: #ff8dab;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ffffff;
+    color: #ff8dab
+  }
+
+  .locationMap {
+    border-radius: 3rem;
+  }
+
+  @media (max-width: 1020px) {
+    .formContainer {
+        margin: 0 ;
+    }
+    .form {
+        width: 100%;
+    }
+    .formRow1
+    .formRow2
+    .formRow3 {
+        flex-direction: column;
+    }
+
+    .formGroupService {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services {
+        flex-direction: row;
+        margin: 1rem 0;
+    }
+
+    .services label {
+        margin-left: 1rem;
+    }
+
+    .locationMap {
+        display: none;
+    }
+  }

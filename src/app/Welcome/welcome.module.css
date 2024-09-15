@@ -1,0 +1,113 @@
+
+
+.headshot {
+    margin: 3rem 3rem;
+}
+
+.headshot img {
+    border-radius: 50%;
+}
+
+.info {
+
+    align-content: center;
+    background: rgb(233,120,143);
+    background: radial-gradient(circle, rgba(233,120,143,1) 55%, rgba(99,102,115,1) 100%);
+    border-radius: 10%;
+    margin: 0 25%;
+}
+
+.topRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topRow h4 {
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+    margin: 4rem 0 0 0;
+    text-align: center;
+}
+
+.topRow blockquote {
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Yeseva One", serif;
+    font-style: italic;
+    color: rgb(105, 105, 105);
+    margin: 2rem 0 1rem 0;
+}
+
+.bottomRow blockquote {
+    font-size: 3.2rem;
+    font-style: italic;
+    font-family: "Yeseva One", serif;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.bottomRow p {
+    text-align: center;
+}
+
+.photoRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.welcomep {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+
+.name {
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid rgb(255, 139, 139);
+    max-width: 100%;
+    overflow: hidden;
+    margin: 6rem auto auto auto;
+    color: rgb(105, 105, 105);
+    font-family: "Moderustic", sans-serif;
+  }
+
+  .ctaButton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    background-color: #ff8dab;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ffffff;
+    color: #ff8dab
+  }
+
+@media screen and (max-width: 1020px) {
+    .welcomep {
+        z-index: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
