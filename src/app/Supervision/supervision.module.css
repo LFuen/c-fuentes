@@ -230,18 +230,24 @@
     margin: 2rem 0;
 }
 
+.blurbRow {
+    margin: 0 1rem;
+    flex-direction: column;
+}
+
+.blurbRow img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;    
+    border-radius: 4rem;
+}
+
 .topBlurb {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #696969;
     padding: 1rem 2rem;
     margin: 6rem 4rem 0 4rem;
     align-items: center;
-}
-
-.topBlurb img {
-    width: 100%;
-    height: auto;
-    border-radius: 4rem;
 }
 
 .midBlurb {
@@ -297,17 +303,6 @@
         width: 100%;
         height: auto;
         border-radius: 3rem;
-    }
-
-    .blurbRow {
-        margin: 0 1rem;
-        flex-direction: column;
-    }
-
-    .blurbRow img {
-        width: 100%;
-        height: auto;
-        margin: 2rem 0;
     }
 
     .techniqueRow {

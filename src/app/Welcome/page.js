@@ -4,7 +4,6 @@ import { Row, Col, Button, Container } from "reactstrap";
 import styles from "./welcome.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import AccordionComp from "../AccordionComp/page";
 
 export default function Welcome() {
 	return (
