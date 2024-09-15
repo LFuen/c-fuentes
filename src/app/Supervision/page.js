@@ -115,8 +115,8 @@ export default function Supervision() {
 					<Col>
 						<p>
 							Cara began her mental health career in 2015 as a Mental Health
-							Specialist in the psychotic disorders’ inpatient unit at McLean
-							Hospital in Belmont, MA. In 2018, while pursuing her master’s
+							Specialist in the psychotic disorders&#39; inpatient unit at McLean
+							Hospital in Belmont, MA. In 2018, while pursuing her master&#39;s
 							degree at the University of Massachusetts Boston in Mental Health
 							Counseling, she interned at an outpatient counseling center in
 							Norwell, MA. There, she provided individual therapy for children,
