@@ -4,7 +4,6 @@ import Footer from "./Footer/page";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Script from "next/script";
-import '/dist/output.css';
 
 
 const inter = Inter({ subsets: ["latin"] });
