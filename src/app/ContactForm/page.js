@@ -2,6 +2,7 @@
 import { useState } from "react";
 import CryptoJS from "crypto-js";
 import { Row, Col, ToastBody, ToastHeader } from "reactstrap";
+import Image from "next/image";
 import {
 	Button,
 	Form,
@@ -76,7 +77,7 @@ const ContactForm = () => {
 			<Container fluid className="contact-page">
 				<Row>
 					<Col xs={12}>
-						<img
+						<Image
 							src={mapUrl}
 							alt="Our location on Google Maps"
 							style={containerStyle}
@@ -90,7 +91,7 @@ const ContactForm = () => {
 
 	return (
 		<Container fluid className={styles.formContainer}>
-			<h2 xs={12}>Let's Get In Touch</h2>
+			<h2 xs={12}>Let&#39;s Get In Touch</h2>
 			<section className={styles.contactSection}>
 				<Row className={styles.contactRow}>
 					<Col>

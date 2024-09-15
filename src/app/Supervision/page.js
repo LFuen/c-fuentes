@@ -130,7 +130,7 @@ export default function Supervision() {
 							IOP at this facility.
 						</p>
 						<p>
-							In 2020, Cara moved to Florida and began working for Children's
+							In 2020, Cara moved to Florida and began working for Children&#39;s
 							Home Society (CHS) in Miami, providing therapy to children and
 							families referred by the Department of Children and Families
 							(DCF). Upon becoming a licensed mental health counselor in 2021,
