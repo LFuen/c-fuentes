@@ -115,26 +115,26 @@ export default function Supervision() {
 					<Col>
 						<p>
 							Cara began her mental health career in 2015 as a Mental Health
-							Specialist in the psychotic disorders&#39; inpatient unit at McLean
-							Hospital in Belmont, MA. In 2018, while pursuing her master&#39;s
-							degree at the University of Massachusetts Boston in Mental Health
-							Counseling, she interned at an outpatient counseling center in
-							Norwell, MA. There, she provided individual therapy for children,
-							adolescents, and adults facing various mental health conditions,
-							including depression, anxiety, substance abuse disorders,
-							borderline personality disorder, and PTSD. At this outpatient
-							center, Cara additionally led group therapy sessions for adults in
-							the Partial Hospitalization Program (PHP) and Intensive Outpatient
-							Program (IOP). After completing her degree in 2019, she was
-							promoted to Coordinator and Lead Therapist of the Substance Abuse
-							IOP at this facility.
+							Specialist in the psychotic disorders&#39; inpatient unit at
+							McLean Hospital in Belmont, MA. In 2018, while pursuing her
+							master&#39;s degree at the University of Massachusetts Boston in
+							Mental Health Counseling, she interned at an outpatient counseling
+							center in Norwell, MA. There, she provided individual therapy for
+							children, adolescents, and adults facing various mental health
+							conditions, including depression, anxiety, substance abuse
+							disorders, borderline personality disorder, and PTSD. At this
+							outpatient center, Cara additionally led group therapy sessions
+							for adults in the Partial Hospitalization Program (PHP) and
+							Intensive Outpatient Program (IOP). After completing her degree in
+							2019, she was promoted to Coordinator and Lead Therapist of the
+							Substance Abuse IOP at this facility.
 						</p>
 						<p>
-							In 2020, Cara moved to Florida and began working for Children&#39;s
-							Home Society (CHS) in Miami, providing therapy to children and
-							families referred by the Department of Children and Families
-							(DCF). Upon becoming a licensed mental health counselor in 2021,
-							Cara began treating adult clients via telehealth and was
+							In 2020, Cara moved to Florida and began working for
+							Children&#39;s Home Society (CHS) in Miami, providing therapy to
+							children and families referred by the Department of Children and
+							Families (DCF). Upon becoming a licensed mental health counselor
+							in 2021, Cara began treating adult clients via telehealth and was
 							recognized as a top therapist at a major teletherapy company. Cara
 							now runs her private practice via telehealth, specializing in
 							treating adults with depression, anxiety disorders, trauma, grief
@@ -225,15 +225,23 @@ export default function Supervision() {
 				</Row>
 			</article>
 
-			<article className={styles.ctaSection}>
-  <h2>Ready to Start Your Journey?</h2>
-  <p>
-    If you're ready to grow as a therapist with dedicated and personalized supervision, let's connect. I'm here to support your journey every step of the way.
-  </p>
-  <Link href="/ContactForm">
-    <Button className={styles.ctaButton}>Contact Me for Supervision</Button>
-  </Link>
-</article>
+			<article className={styles.bottomCTA}>
+				<h2>Ready to Start Your Journey?</h2>
+				<p>
+					If you&#39;re ready to grow as a therapist with dedicated and
+					personalized supervision, let&#39;s connect.
+				</p>
+				<p>
+					I offer my supervision services at a rate of{" "}
+					<strong>$75 per hour session</strong>, ensuring you receive the
+					highest quality guidance and support.
+				</p>
+				<Link href="/ContactForm">
+					<Button className={styles.ctaButton}>
+						Contact Me for Supervision
+					</Button>
+				</Link>
+			</article>
 		</Container>
 	);
 }

@@ -264,6 +264,25 @@
     border-radius: 4rem;
 }
 
+.bottomCTA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4rem 0;
+}
+
+.bottomCTA h2 {
+    font-size: 2.5rem;
+    font-family: "Yeseva One", serif;
+    color: #696969;
+    padding: 1rem 2rem;
+}
+
+.bottomCTA button{
+    margin-top: 2rem;
+}
+
 @media (max-width: 1250px) {
     .techniqueArticle {
         margin: 3rem 3rem;
