@@ -110,7 +110,7 @@ export default function Supervision() {
 			<article className={styles.topBlurb}>
 				<Row className={styles.blurbRow}>
 					<Col>
-						<Image src={ygt} alt="The Grind" width={500} height={500} />
+						<Image src={ygt} alt="The Grind" width={300} height={300} />
 					</Col>
 					<Col>
 						<p>
@@ -192,7 +192,7 @@ export default function Supervision() {
 					</Col>
 
 					<Col>
-						<Image src={ygt} alt="You Got This" width={500} height={500} />
+						<Image src={ygt} alt="You Got This" width={300} height={300} />
 					</Col>
 				</Row>
 			</article>
