@@ -1,15 +1,26 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-cfuentherapy-dev-71108-authRole",
-      "UnauthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-71108-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-71108-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-cfuentherapy-dev-71108-deployment",
-      "UnauthRoleName": "amplify-cfuentherapy-dev-71108-unauthRole",
-      "StackName": "amplify-cfuentherapy-dev-71108",
-      "StackId": "arn:aws:cloudformation:us-east-2:884368416133:stack/amplify-cfuentherapy-dev-71108/7a45ac40-73c6-11ef-a433-0a5e28a6d1c1",
-      "AmplifyAppId": "d3i2xhr7wgtojt"
+      "AuthRoleName": "amplify-cfuentherapy-dev-f6cf4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-f6cf4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-f6cf4-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cfuentherapy-dev-f6cf4-deployment",
+      "UnauthRoleName": "amplify-cfuentherapy-dev-f6cf4-unauthRole",
+      "StackName": "amplify-cfuentherapy-dev-f6cf4",
+      "StackId": "arn:aws:cloudformation:us-east-1:884368416133:stack/amplify-cfuentherapy-dev-f6cf4/34f65f40-744d-11ef-b0b0-0affca5f9d75",
+      "AmplifyAppId": "d244jcznb3p1yr"
+    },
+    "categories": {
+      "function": {
+        "cfunTherapyLambda": {
+          "deploymentBucketName": "amplify-cfuentherapy-dev-f6cf4-deployment",
+          "s3Key": "amplify-builds/cfunTherapyLambda-647338627553384f7964-build.zip"
+        }
+      },
+      "api": {
+        "apib01a03d3": {}
+      }
     }
   }
 }

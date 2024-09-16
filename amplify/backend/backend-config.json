@@ -1,1 +1,43 @@
-{}
+{
+  "api": {
+    "apib01a03d3": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "cfunTherapyLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "cfunTherapyLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_cfunTherapyLambda_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cfunTherapyLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_cfunTherapyLambda_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "cfunTherapyLambda"
+        }
+      ]
+    }
+  }
+}
