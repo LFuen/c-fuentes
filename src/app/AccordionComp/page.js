@@ -11,7 +11,7 @@ import {
 import styles from "./accordion.module.css";
 import Link from "next/link";
 
-const AccordionComp = () => {
+export default function AccordionComp () {
 	const [open, setOpen] = useState("1");
 	const toggle = (id) => {
 		if (open === id) {
@@ -89,5 +89,3 @@ const AccordionComp = () => {
 		</Container>
 	);
 };
-
-export default AccordionComp;

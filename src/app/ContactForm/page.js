@@ -14,7 +14,7 @@ import {
 } from "reactstrap";
 import styles from "./contactForm.module.css";
 
-const ContactForm = () => {
+export default function ContactForm () {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
@@ -254,4 +254,3 @@ const ContactForm = () => {
 	);
 };
 
-export default ContactForm;
