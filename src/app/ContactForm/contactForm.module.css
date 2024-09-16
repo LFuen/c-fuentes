@@ -181,3 +181,15 @@
         display: none;
     }
   }
+
+  @media (max-width: 700px) {
+    .inputCol {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formRows>.col-6 {
+        width: 100%;
+    }
+  }

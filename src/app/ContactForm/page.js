@@ -96,7 +96,7 @@ export default function ContactForm () {
 			<h2 xs={12}>Let&#39;s Get In Touch</h2>
 			<section className={styles.contactSection}>
 				<Row className={styles.contactRow}>
-					<Col>
+					<Col className={styles.inputCol}>
 						<Form onSubmit={handleSubmit} className={styles.form}>
 							<Row className={styles.formRows}>
 								<Col xs={6}>
