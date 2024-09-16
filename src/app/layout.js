@@ -1,4 +1,4 @@
-import { Inter, Merienda, Yeseva_One } from '@next/font/google';
+import { Inter, Merienda, Yeseva_One } from "next/font/google";
 import Nav from "./Nav/page";
 import Footer from "./Footer/page";
 import "./globals.css";
