@@ -39,7 +39,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgb(255, 139, 139);
-    font-family: "Moderustic", sans-serif;
+    font-family: "Merienda", sans-serif;
     padding-top: .3rem;
 }
 
@@ -78,17 +78,9 @@
     box-shadow: 0 0 1px rgb(255, 139, 139);
   }
 
-
-
 ul.navMenu {
     padding: 0;
     margin: .8rem auto;
-}
-
-
-.fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
 }
 
 .navMenu {
@@ -138,7 +130,7 @@ ul.navMenu {
     margin-left: 1rem;
 }
 
-.bi-list {
+.menuIcon i {
     color: rgb(255, 139, 139);
 }
 
@@ -152,34 +144,33 @@ ul.navMenu {
 @media (max-width: 1020px) {
 
     .navMenu {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 100%;
         height: 90vh;
         position: absolute;
-        top: 80px;
-        left: -100%;
+        top: 6.1rem;
         opacity: .9;
         transition: all 0.5s ease;
     }
     
     .navMenu.active {
+        display: flex;
         background: #ffffff;
         left: 0;
         opacity: 1;
+        padding-top: 3rem;
         transition: all 0.5s ease;
         z-index: 1;
     }
     
     .navLinks {
-        text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
     }
     
     .navLinks:hover {
-        background-color: #2e2e2e;
         border-radius: 10;
     }
     
@@ -193,28 +184,9 @@ ul.navMenu {
         cursor: pointer;
     }
     
-    .bi-x {
+    .menuIcon i {
         color: rgb(255, 139, 139);
         font-size: 2rem;
-    }
-    
-    .navLinksMobile {
-        display: block;
-        text-align: center;
-        padding: 1.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: #fff2f2;
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    
-    .navLinksMobile:hover {
-        background: #fff;
-        color: #6999c3;
-        transition: 250ms;
     }
 
     .navColA

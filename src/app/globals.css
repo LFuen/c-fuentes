@@ -21,7 +21,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #ffffff;
   color: rgb(105, 105, 105);
-  font-family: "Moderustic", sans-serif;
+  font-family: "Merienda", sans-serif;
 }
 
 @layer utilities {

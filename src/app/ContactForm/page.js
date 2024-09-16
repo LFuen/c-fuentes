@@ -236,7 +236,7 @@ export default function ContactForm () {
 					<Col className={styles.locationMap}>
 						<LocationMap />
 
-						<h6>* Serving all of the State of Florida</h6>
+						<h6>* Serving <strong>all</strong> of the State of Florida</h6>
 					</Col>
 				</Row>
 			</section>

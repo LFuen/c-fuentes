@@ -33,7 +33,7 @@
 
 .topRow blockquote {
     font-size: 3.2rem;
-    font-style: italic;
+    text-align: center;
     font-weight: bold;
     font-family: "Yeseva One", serif;
     font-style: italic;
@@ -64,7 +64,7 @@
 
 .welcomep {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     margin: auto;
 }
 
@@ -84,12 +84,12 @@
     overflow: hidden;
     margin: 6rem auto auto auto;
     color: rgb(105, 105, 105);
-    font-family: "Moderustic", sans-serif;
+    font-family: "Merienda", sans-serif;
   }
 
   .ctaButton {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     border: none;
     color: #fff;
@@ -108,6 +108,28 @@
     .welcomep {
         z-index: 0;
         width: 100%;
-        padding: 0 20px;
+    }
+
+    .photoRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .headshot {
+        width: 50%;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        align-content: center;
+    }
+
+    .ctaButton {
+        margin: 2rem 0;
     }
 }

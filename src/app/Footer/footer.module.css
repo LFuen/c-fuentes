@@ -1,7 +1,7 @@
 .foot {
     background-color: #fff2f2;
     color: rgb(105, 105, 105);
-    font-family: "Moderustic", sans-serif;
+    font-family: "Merienda", sans-serif;
 }
 
 .footerRow1 {
@@ -39,18 +39,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    width: 100%;
+  }
 
+.footerB a {
+  text-decoration: none;
+  color: #ff8dab;
+  margin: 0 auto 1rem auto;
+}
 
   .contact {
     padding: 1rem;
     margin: 0;
     font-size: 2.5rem;
+    font-family: "Yeseva One", serif;
   }
 
   .address {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+
 
   .socials {
     padding: 1rem;
