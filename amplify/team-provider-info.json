@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cfuentherapy-dev-71108-authRole",
+      "UnauthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-71108-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::884368416133:role/amplify-cfuentherapy-dev-71108-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-cfuentherapy-dev-71108-deployment",
+      "UnauthRoleName": "amplify-cfuentherapy-dev-71108-unauthRole",
+      "StackName": "amplify-cfuentherapy-dev-71108",
+      "StackId": "arn:aws:cloudformation:us-east-2:884368416133:stack/amplify-cfuentherapy-dev-71108/7a45ac40-73c6-11ef-a433-0a5e28a6d1c1",
+      "AmplifyAppId": "d3i2xhr7wgtojt"
+    }
+  }
+}
