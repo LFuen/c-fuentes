@@ -82,6 +82,8 @@ export default function ContactForm () {
 							alt="Our location on Google Maps"
 							style={containerStyle}
 							className={styles.locationMap}
+							width={300}
+							height={300}
 						/>
 					</Col>
 				</Row>
