@@ -7,7 +7,7 @@
     z-index: 1;    
     top: 0;
     position: sticky;
-    padding-top: .5rem;
+    padding-top: .01rem;
     width: 100%;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: .8rem 2rem;
+    margin: .3rem 2rem;
 }
 
 .menuIcon {
@@ -31,7 +31,7 @@
 }
 
 .navColB {
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 .navbar a {

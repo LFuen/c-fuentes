@@ -19,7 +19,8 @@
     text-align: center;
     width: 100%;
     z-index: 0;   
-    padding: 6rem 0 4rem 0;
+    padding: 0 0 4rem 0;
+    position: relative;
   }
 
   .mentalHealth::before {
@@ -29,7 +30,6 @@
     z-index: -1;
     background: linear-gradient(white, rgba(255, 255, 255, 0.503));
     opacity: .6;
-    height: 65%;
   }
 
   .quote {
@@ -75,6 +75,7 @@
     justify-content: center;
     align-items: center;
     color: rgb(105, 105, 105);
+    text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 2px rgb(255, 139, 139);
     padding-top: 2rem;
@@ -249,6 +250,11 @@
     padding: 1rem 2rem;
     margin: 6rem 4rem 0 4rem;
     align-items: center;
+    text-align: justify;
+}
+
+.topBlurb p {
+    text-align: justify
 }
 
 .midBlurb {
@@ -257,6 +263,10 @@
     padding: 1rem 2rem;
     margin: 2rem 4rem;
     align-items: center;
+}
+
+.midBlurb p {
+    text-align: justify
 }
 
 .midBlurb img {
@@ -270,7 +280,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 4rem 0;
+    margin: 0 0 4rem 0;    
+    text-align: center;
 }
 
 .bottomCTA h2 {
@@ -280,25 +291,21 @@
     padding: 1rem 2rem;
 }
 
-.bottomCTA button{
-    margin-top: 2rem;
+.bottomCTA p {
+    margin: 0 1rem;
 }
 
-@media (max-width: 1320px) {
-    .mentalHealth::before {
-        height: 75%;
-      }
+.bottomCTA button{
+    margin-top: 2rem;
+
 }
+
 
 @media (max-width: 1250px) {
     .techniqueArticle {
         margin: 3rem 3rem;
         padding: 1rem 1rem;
     }
-
-    .mentalHealth::before {
-        height: 75%;
-      }
 }
 
 @media (max-width: 1150px) {
@@ -375,12 +382,6 @@
     }
 }
 
-@media (max-width: 750px) {
-    .mentalHealth::before {
-        height: 85%;
-      }
-}
-
 @media (max-width: 640px) {
     .diamondContainer {
         display: none;
@@ -397,6 +398,14 @@
         padding: 1rem 1rem;
     }
 
+    .techniqueColA {
+        text-align: center;
+    }
+
+    .techniqueColB {
+        text-align: center;
+    }
+
     .quote {
         font-size: 2rem;
         color: rgb(76, 75, 75);
@@ -410,14 +419,4 @@
       .techniqueTitle h2 {
         font-size: 3rem;
     }
-
-    .mentalHealth::before {
-        height: 55%;
-      }
-}
-
-@media (max-width: 526px) {
-    .mentalHealth::before {
-        height: 65%;
-      }
 }

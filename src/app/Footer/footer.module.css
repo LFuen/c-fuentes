@@ -41,9 +41,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
-    order: 3;
-  }
+  order: 3;
+}
 
 .footerB a {
   text-decoration: none;

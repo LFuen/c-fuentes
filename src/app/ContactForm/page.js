@@ -93,7 +93,7 @@ export default function ContactForm () {
 
 	return (
 		<Container fluid className={styles.formContainer}>
-			<h2 xs={12}>Let&#39;s Get In Touch</h2>
+			<h2 xs={12}>Let&#s Get In Touch</h2>
 			<section className={styles.contactSection}>
 				<Row className={styles.contactRow}>
 					<Col className={styles.inputCol}>

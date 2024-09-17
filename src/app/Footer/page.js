@@ -21,8 +21,8 @@ export default function Footer() {
 						<p>Contact</p>
 					</Col>
 					<Col className={styles.address}>
-						<Link href={"mailto:CFuenTherapy@gmail.com"}>
-							CFuenTherapy@Gmail.com
+						<Link href={"mailto:Contact@CFuenTherapy.com"}>
+							Contact@CFuenTherapy.com
 						</Link>
 						<p>Cara Fuentes, LMHC - Supervisor</p>
 						<p>Port St. Lucie, FL</p>
@@ -48,7 +48,7 @@ export default function Footer() {
 						</Link>
 
 						<Link
-							href="mailto:CFuenTherapy@gmail.com"
+							href="mailto:Contact@CFuenTherapy.com"
 							target="_blank"
 							rel="noreferrer"
 							className={styles.socials}

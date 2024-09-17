@@ -175,6 +175,7 @@
     display: flex;
     justify-content: center  ;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .treatHeader {
@@ -187,6 +188,7 @@
     justify-content: center ;
     border-radius: 0 !important;
     border: none;
+    text-align: center;
 }
 
 .treatCard{
@@ -204,6 +206,14 @@
     display: flex;
     justify-content: center;
     text-wrap: wrap;
+}
+
+.treatCol ul {
+    padding: 0;
+}
+
+.treatCol li {
+    text-align: center;
 }
 
 .treatTopRow {
@@ -279,6 +289,12 @@
     }
 }
 
+@media (max-width: 750px) {
+    .techniqueTitle h2 {
+        text-align: center;
+    }
+}
+
 @media (max-width: 640px) {
     .diamondContainer {
         display: none;
@@ -307,5 +323,15 @@
 
       .techniqueTitle h2 {
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .techniqueColA {
+        padding: 0
+    }
+
+    .techniqueColB {
+        padding: 0
     }
 }

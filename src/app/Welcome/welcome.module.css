@@ -8,15 +8,6 @@
     border-radius: 50%;
 }
 
-.info {
-
-    align-content: center;
-    background: rgb(233,120,143);
-    background: radial-gradient(circle, rgba(233,120,143,1) 55%, rgba(99,102,115,1) 100%);
-    border-radius: 10%;
-    margin: 0 25%;
-}
-
 .topRow {
     display: flex;
     justify-content: center;
@@ -62,27 +53,13 @@
     flex-direction: row;
 }
 
-.welcomep {
-    max-width: 100%;
-    padding: 0 1.25rem;
-    margin: auto;
-}
-
-
-.name {
-    margin-bottom: 100px;
-    justify-content: center;
-  }
-
 .welcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 4px solid rgb(255, 139, 139);
     max-width: 100%;
     overflow: hidden;
-    margin: 6rem auto auto auto;
     color: rgb(105, 105, 105);
     font-family: "Merienda", sans-serif;
   }
@@ -105,10 +82,6 @@
   }
 
 @media screen and (max-width: 1020px) {
-    .welcomep {
-        z-index: 0;
-        width: 100%;
-    }
 
     .photoRow {
         display: flex;
