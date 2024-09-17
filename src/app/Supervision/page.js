@@ -98,7 +98,7 @@ export default function Supervision() {
 				</Col>
 				<Col>
 					<Link href="/ContactForm">
-						<Button className={styles.ctaButton}>Let's Begin</Button>
+						<Button className={styles.ctaButton}>Let&apos;s Begin</Button>
 					</Link>
 				</Col>
 			</Row>
@@ -115,9 +115,9 @@ export default function Supervision() {
 					<Col>
 						<p>
 							Cara began her mental health career in 2015 as a Mental Health
-							Specialist in the psychotic disorders' inpatient unit at
+							Specialist in the psychotic disorders&apos; inpatient unit at
 							McLean Hospital in Belmont, MA. In 2018, while pursuing her
-							master's degree at the University of Massachusetts Boston in
+							master&apos;s degree at the University of Massachusetts Boston in
 							Mental Health Counseling, she interned at an outpatient counseling
 							center in Norwell, MA. There, she provided individual therapy for
 							children, adolescents, and adults facing various mental health
@@ -131,7 +131,7 @@ export default function Supervision() {
 						</p>
 						<p>
 							In 2020, Cara moved to Florida and began working for
-							Children's Home Society (CHS) in Miami, providing therapy to
+							Children&apos;s Home Society (CHS) in Miami, providing therapy to
 							children and families referred by the Department of Children and
 							Families (DCF). Upon becoming a licensed mental health counselor
 							in 2021, Cara began treating adult clients via telehealth and was
@@ -228,8 +228,8 @@ export default function Supervision() {
 			<article className={styles.bottomCTA}>
 				<h2>Ready to Start Your Journey?</h2>
 				<p>
-					If you're ready to grow as a therapist with dedicated and
-					personalized supervision, let's connect.
+					If you&apos;re ready to grow as a therapist with dedicated and
+					personalized supervision, let&apos;s connect.
 				</p>
 				<p>
 					I offer my supervision services at a rate of

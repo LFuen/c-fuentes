@@ -23,7 +23,7 @@ export default function Therapy() {
 		{
 			name: "Depression",
 			id: 2,
-			gist: "Depression is a mood disorder marked by persistent sadness, hopelessness, and/or a loss of interest in activities once enjoyed. It can affect sleep, appetite, energy levels, and concentration, making daily tasks feel overwhelming. More than just occasional sadness, depression can significantly impact a person's ability to function in their personal and/or professional life.",
+			gist: "Depression is a mood disorder marked by persistent sadness, hopelessness, and/or a loss of interest in activities once enjoyed. It can affect sleep, appetite, energy levels, and concentration, making daily tasks feel overwhelming. More than just occasional sadness, depression can significantly impact a person&apos;s ability to function in their personal and/or professional life.",
 		},
 
 		{
@@ -34,7 +34,7 @@ export default function Therapy() {
 		{
 			name: "Trauma",
 			id: 4,
-			gist: "Trauma is a response to a deeply distressing or disturbing event that overwhelms a person's ability to cope, leaving lasting emotional and psychological effects. It can result from experiences such as abuse, accidents, or significant loss. Symptoms of trauma may include flashbacks, anxiety, emotional numbness, and difficulty trusting others.",
+			gist: "Trauma is a response to a deeply distressing or disturbing event that overwhelms a person&apos;s ability to cope, leaving lasting emotional and psychological effects. It can result from experiences such as abuse, accidents, or significant loss. Symptoms of trauma may include flashbacks, anxiety, emotional numbness, and difficulty trusting others.",
 		},
 		{
 			name: "Obsessive-Compulsive Disorder (OCD)",
@@ -66,12 +66,12 @@ export default function Therapy() {
 		{
 			name: "Person-Centered Therapy",
 			id: 3,
-			gist: "Person-centered therapy is a humanistic approach that emphasizes an individual's ability to lead their own healing process. Founded on the belief that individuals have the innate capacity for personal growth, this therapy focuses on creating a supportive, non-judgmental environment where individuals feel understood and valued. Through empathy, genuineness, and unconditional positive regard, the therapist helps individuals explore their feelings and find their own solutions, fostering greater self-awareness and personal development.",
+			gist: "Person-centered therapy is a humanistic approach that emphasizes an individual&apos;s ability to lead their own healing process. Founded on the belief that individuals have the innate capacity for personal growth, this therapy focuses on creating a supportive, non-judgmental environment where individuals feel understood and valued. Through empathy, genuineness, and unconditional positive regard, the therapist helps individuals explore their feelings and find their own solutions, fostering greater self-awareness and personal development.",
 		},
 		{
 			name: "Solution-Focused Therapy",
 			id: 4,
-			gist: "Solution-focused therapy is a goal-oriented approach that emphasizes finding practical solutions to current challenges rather than focusing on past issues. It encourages individuals to identify their strengths and resources to create positive change in their lives. By concentrating on small, achievable goals, and what's already working, solution-focused therapy helps individuals build momentum towards their desired outcomes in a short period of time.",
+			gist: "Solution-focused therapy is a goal-oriented approach that emphasizes finding practical solutions to current challenges rather than focusing on past issues. It encourages individuals to identify their strengths and resources to create positive change in their lives. By concentrating on small, achievable goals, and what&apos;s already working, solution-focused therapy helps individuals build momentum towards their desired outcomes in a short period of time.",
 		},
 
 		{
@@ -82,7 +82,7 @@ export default function Therapy() {
 		{
 			name: "Strength-Based Therapy",
 			id: 6,
-			gist: "Strength-based therapy is an empowering approach that focuses on an individual's inherent strengths and resources, rather than their problems or deficits. By highlighting personal abilities, resilience, and past successes, this therapeutic model helps individuals build confidence and develop positive strategies for overcoming challenges. The goal is to foster self-efficacy, promote growth, and support individuals in achieving their goals by leveraging their unique strengths.",
+			gist: "Strength-based therapy is an empowering approach that focuses on an individual&apos;s inherent strengths and resources, rather than their problems or deficits. By highlighting personal abilities, resilience, and past successes, this therapeutic model helps individuals build confidence and develop positive strategies for overcoming challenges. The goal is to foster self-efficacy, promote growth, and support individuals in achieving their goals by leveraging their unique strengths.",
 		},
 	];
 
@@ -129,7 +129,7 @@ export default function Therapy() {
 				</Col>
 				<Col>
 					<Link href="/ContactForm">
-						<Button className={styles.ctaButton}>Let's Begin</Button>
+						<Button className={styles.ctaButton}>Let&apos;s Begin</Button>
 					</Link>
 				</Col>
 			</Row>
