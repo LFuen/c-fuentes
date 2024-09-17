@@ -46,7 +46,7 @@ export default function ContactForm () {
 		).toString();
 
 		try {
-			const response = await fetch("/api/send-email", {
+			const response = await fetch("/api/submission", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -93,7 +93,7 @@ export default function ContactForm () {
 
 	return (
 		<Container fluid className={styles.formContainer}>
-			<h2 xs={12}>Let&#s Get In Touch</h2>
+			<h2 xs={12}>Let's Get In Touch</h2>
 			<section className={styles.contactSection}>
 				<Row className={styles.contactRow}>
 					<Col className={styles.inputCol}>
@@ -229,7 +229,7 @@ export default function ContactForm () {
 								</Col>
 							</Row>
 
-							<Button className={styles.ctaButton}>Submit</Button>
+							<Button className={styles.ctaButton} onSubmit={handleSubmit()}>Submit</Button>
 						</Form>
 					</Col>
 
@@ -243,7 +243,7 @@ export default function ContactForm () {
 
 			<Toast isOpen={success} color="success">
 				<ToastHeader toggle={() => setSuccess(false)}>Success</ToastHeader>
-				<ToastBody>Form submitted successfully!</ToastBody>
+				<ToastBody>Form submitted successfully! I will get back to you within 24 hours.</ToastBody>
 			</Toast>
 
 			<Toast isOpen={failure} color="danger">
