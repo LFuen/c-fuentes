@@ -91,14 +91,14 @@ export default function Supervision() {
 				<Col>
 					<blockquote className={styles.quote}>
 						<p>
-							Empowering future therapists through guidance, support, and a
-							commitment to lifelong learning.
+							Empowering the next generation of therapists through guidance,
+							support, and a commitment to lifelong learning.
 						</p>
 					</blockquote>
 				</Col>
 				<Col>
 					<Link href="/ContactForm">
-						<Button className={styles.ctaButton}>Let&apos;s Begin</Button>
+						<Button className={styles.ctaButton}>Contact Me</Button>
 					</Link>
 				</Col>
 			</Row>
@@ -114,34 +114,34 @@ export default function Supervision() {
 					</Col>
 					<Col>
 						<p>
-							Cara began her mental health career in 2015 as a Mental Health
+							I began my mental health career in 2015 as a Mental Health
 							Specialist in the psychotic disorders&apos; inpatient unit at
-							McLean Hospital in Belmont, MA. In 2018, while pursuing her
+							McLean Hospital in Belmont, MA. In 2018, while pursuing my
 							master&apos;s degree at the University of Massachusetts Boston in
-							Mental Health Counseling, she interned at an outpatient counseling
-							center in Norwell, MA. There, she provided individual therapy for
+							Mental Health Counseling, I interned at an outpatient counseling
+							center in Norwell, MA. There, I provided individual therapy for
 							children, adolescents, and adults facing various mental health
 							conditions, including depression, anxiety, substance abuse
 							disorders, borderline personality disorder, and PTSD. At this
-							outpatient center, Cara additionally led group therapy sessions
-							for adults in the Partial Hospitalization Program (PHP) and
-							Intensive Outpatient Program (IOP). After completing her degree in
-							2019, she was promoted to Coordinator and Lead Therapist of the
-							Substance Abuse IOP at this facility.
+							outpatient center, I additionally led group therapy sessions for
+							adults in the Partial Hospitalization Program (PHP) and Intensive
+							Outpatient Program (IOP). After completing my degree in 2019, I
+							was promoted to Coordinator and Lead Therapist of the Substance
+							Abuse IOP at the same facility.
 						</p>
 						<p>
-							In 2020, Cara moved to Florida and began working for
-							Children&apos;s Home Society (CHS) in Miami, providing therapy to
-							children and families referred by the Department of Children and
-							Families (DCF). Upon becoming a licensed mental health counselor
-							in 2021, Cara began treating adult clients via telehealth and was
-							recognized as a top therapist at a major teletherapy company. Cara
-							now runs her private practice via telehealth, specializing in
-							treating adults with depression, anxiety disorders, trauma, grief
-							and loss, and adjustment disorders, while also providing in-home
-							counseling for older adults. Her diverse experience spans multiple
-							populations and treatment levels. See below to learn more about
-							her supervision style.
+							In 2020, I moved to Florida and began working for Children&apos;s
+							Home Society (CHS) in Miami, providing therapy to children and
+							families referred by the Department of Children and Families
+							(DCF). Upon becoming a licensed mental health counselor in 2021, I
+							began treating adult clients via telehealth and was recognized as
+							a top therapist at a major teletherapy company. I now run my
+							private practice via telehealth, specializing in treating adults
+							with depression, anxiety disorders, trauma, grief and loss, and
+							adjustment disorders, while also providing in-home counseling for
+							older adults. My diverse experience spans multiple populations and
+							treatment levels. See below to learn more about my supervision
+							style.
 						</p>
 					</Col>
 				</Row>
@@ -179,15 +179,27 @@ export default function Supervision() {
 				<Row className={styles.blurbRow}>
 					<Col>
 						<p>
-							OCD is a mental health condition characterized by persistent,
-							unwanted thoughts (obsessions) and repetitive behaviors or mental
-							acts (compulsions) aimed at reducing the anxiety those thoughts
-							cause. These compulsions can interfere with daily life, as
-							individuals feel compelled to perform certain rituals or routines
-							to alleviate distress. While these rituals provide temporary
-							relief, the cycle of obsessions and compulsions can become
-							overwhelming and difficult to control without proper treatment and
-							support.
+							As a qualified supervisor for MHC interns, I view supervision as
+							an evolving process that adapts to your growth and professional
+							development. I utilize an integrated developmental model that
+							includes three stages: entry-level (highly motivated but anxious
+							about evaluation), mid-level (fluctuating confidence and
+							motivation), and advanced (secure, stable, with accurate empathy).
+							I will assist you in identifying your current stage and provide
+							feedback and guidance tailored to where you are in your journey.
+							My goal is to enhance your skills and confidence at a pace that is
+							appropriate for you.
+						</p>
+						<p>
+							Together, we&apos;ll work towards fostering your growth and
+							building a strong foundation for your practice. In supervision
+							sessions, I prioritize creating a supportive and open environment
+							where you feel comfortable discussing challenges and successes
+							alike. My collaborative approach encourages self-reflection and
+							ongoing learning, allowing you to develop your therapeutic style
+							and skills. By addressing both your strengths and areas for
+							growth, we aim to build a well-rounded foundation that will serve
+							you throughout your career in mental health counseling.
 						</p>
 					</Col>
 
@@ -232,14 +244,19 @@ export default function Supervision() {
 					personalized supervision, let&apos;s connect.
 				</p>
 				<p>
-					I offer my supervision services at a rate of
-					<strong> <u>$75 per hour session</u></strong>, ensuring you receive the
-					highest quality guidance and support.
+					I offer supervision services via <strong>Doxy.me</strong>, at a rate
+					of
+					<strong>
+						{" "}
+						<u>$75 per hour session</u>
+					</strong>
+					, ensuring you receive the highest quality guidance and support.
+				</p>
+				<p>
+					<strong>** FLORIDA mental health interns only.</strong>
 				</p>
 				<Link href="/ContactForm">
-					<Button className={styles.ctaButton}>
-						Contact Me for Supervision
-					</Button>
+					<Button className={styles.ctaButton}>Let's Begin</Button>
 				</Link>
 			</article>
 		</Container>

@@ -20,6 +20,7 @@
     width: 100%;
     z-index: 0;   
     padding: 6rem 0 4rem 0;
+    position: relative;
   }
 
   .mentalHealth::before {
@@ -30,6 +31,14 @@
     background: linear-gradient(white, rgba(255, 255, 255, 0.503));
     opacity: .6;
   }
+  .title {
+    display: flex;
+    justify-content: center;
+    font-family: "Yeseva One", serif;
+    font-size: 4rem;
+    color: rgb(105, 105, 105);
+    margin-top: 5rem;
+}
 
   .quote {
     font-size: 3.3rem;
@@ -228,6 +237,30 @@
     display: flex;
     align-items: center;
     margin: 2rem 0;
+}
+
+.bottomCTA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4rem 0;    
+    text-align: center;
+}
+
+.bottomCTA h2 {
+    font-size: 2.5rem;
+    font-family: "Yeseva One", serif;
+    color: #696969;
+    padding: 1rem 2rem;
+}
+
+.bottomCTA p {
+    margin: 0 1rem;
+}
+
+.bottomCTA a {
+    margin-top: 2rem;
 }
 
 @media (max-width: 1250px) {

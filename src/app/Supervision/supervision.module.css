@@ -244,6 +244,10 @@
     border-radius: 4rem;
 }
 
+.blurbRow p {
+    margin-bottom: 2rem;
+}
+
 .topBlurb {
     font-size: 1rem;
     color: #696969;
@@ -258,10 +262,9 @@
 }
 
 .midBlurb {
-    font-size: 1.3rem;
     color: #696969;
     padding: 1rem 2rem;
-    margin: 2rem 4rem;
+    margin: 0 4rem;
     align-items: center;
 }
 

@@ -129,10 +129,14 @@ export default function Therapy() {
 				</Col>
 				<Col>
 					<Link href="/ContactForm">
-						<Button className={styles.ctaButton}>Let&apos;s Begin</Button>
+						<Button className={styles.ctaButton}>Contact Me</Button>
 					</Link>
 				</Col>
 			</Row>
+
+			<h1>
+				<span className={styles.title}>Therapy</span>
+			</h1>
 
 			<article className={styles.techniqueArticle}>
 				<Row className={styles.techniqueTitle}>
@@ -250,6 +254,27 @@ export default function Therapy() {
 					</Card>
 				</Col>
 			</Row>
+
+			<article className={styles.bottomCTA}>
+			<h2>Ready to Start Your Journey?</h2>
+<p>
+    If you’re seeking a compassionate and personalized therapy experience to help you navigate life's challenges, let's connect. 
+</p>
+<p>
+    I offer therapy sessions at a rate of <strong><u>$125 per 50 minute session</u></strong>. </p>
+	<p>Sessions are conducted via telehealth or phone, providing you with the flexibility and comfort to receive support from wherever you are.
+</p>
+<p>
+    Please note, I <strong><u>do not</u></strong> accept insurance, ensuring a more private and straightforward approach to your care.
+</p>
+<p><strong>**Must be a Florida resident over 18 years old.</strong></p>
+				<Link href="/ContactForm">
+					<Button className={styles.ctaButton}>
+						Let's Begin
+					</Button>
+				</Link>
+			</article>
+
 		</Container>
 	);
 }

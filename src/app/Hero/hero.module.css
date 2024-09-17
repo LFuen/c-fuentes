@@ -12,7 +12,7 @@
     height: 100vh;
     padding-top: 3rem;
     color: rgb(113, 113, 113);
-    font-family: "Merienda", sans-serif;
+    font-family: "Yeseva One", serif;
   }
 
   .hero::before {
@@ -26,9 +26,17 @@
   }
 
   .heroTitle {
-    font-size: 5rem;
-    margin-top: 5rem;
+    font-size: 3.3rem;
     font-weight: bold;
+    z-index: 1;
+  }
+
+  .quote {
+    font-size: 2rem;
+    color: rgb(76, 76, 76);
+    padding: 4rem 8rem 2rem 8rem;
+    z-index: 1;
+    font-family: "Yeseva One", serif;
   }
 
     .ctaButton {

@@ -33,7 +33,7 @@ export default function Welcome() {
 						on her clients&apos; lives. For more information, see the details
 						below and visit the Therapy tab.
 					</p>
-					<Link href="#contact">
+					<Link href="/ContactForm">
 						<Button className={styles.ctaButton}>Contact Now</Button>
 					</Link>
 				</Col>
