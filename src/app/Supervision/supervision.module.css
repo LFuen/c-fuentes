@@ -83,7 +83,7 @@
 
 
 .techniqueArticle {
-    background-color: #F7F7F8;
+    background-color: #ededef;
     padding: 1rem 3rem;
     margin: 5rem 8rem;
     border-radius: 5rem;
@@ -97,6 +97,7 @@
     margin: 2rem 0;
     flex-wrap: nowrap;
     width: 100%;
+    text-align: center;
 }
 
 .techniqueColA {
@@ -295,7 +296,7 @@
 }
 
 .bottomCTA p {
-    margin: 0 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .bottomCTA button{

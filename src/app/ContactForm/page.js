@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import CryptoJS from "crypto-js";
-import { Row, Col, ToastBody, ToastHeader } from "reactstrap";
+import jwt from "jsonwebtoken";
+import { Row, Col, ToastBody, ToastHeader, Modal, ModalHeader, ModalBody } from "reactstrap";
 import Image from "next/image";
 import {
 	Button,
@@ -28,30 +28,32 @@ export default function ContactForm () {
 	const [success, setSuccess] = useState(false);
 	const [failure, setFailure] = useState(false);
 
+	const toggleSucces = () => setSuccess(!success);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const formData = {
 			name,
 			email,
 			phone,
+			city,
+			state,
+			zip,
 			message,
 			therapyChecked,
 			supervisionChecked,
 		};
 
-		const secretKey = process.env.SECRET_KEY;
-		const encryptedData = CryptoJS.AES.encrypt(
-			JSON.stringify(formData),
-			secretKey,
-		).toString();
+		const secretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
+		const token = jwt.sign(formData, secretKey);
 
 		try {
-			const response = await fetch("/api/submission", {
+			const response = await fetch("/api/encrypt", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
 				},
-				body: JSON.stringify({ data: encryptedData }),
+				body: JSON.stringify(formData),
 			});
 
 			if (response.ok) {
@@ -229,7 +231,7 @@ export default function ContactForm () {
 								</Col>
 							</Row>
 
-							<Button className={styles.ctaButton} onSubmit={handleSubmit()}>Submit</Button>
+							<Button className={styles.ctaButton} type="submit">Submit</Button>
 						</Form>
 					</Col>
 
@@ -241,13 +243,19 @@ export default function ContactForm () {
 				</Row>
 			</section>
 
-			<Toast isOpen={success} color="success">
-				<ToastHeader toggle={() => setSuccess(false)}>Success</ToastHeader>
-				<ToastBody>Form submitted successfully! I will get back to you within 24 hours.</ToastBody>
-			</Toast>
+			<Modal isOpen={success} toggle={toggleSucces}>
+				<ModalHeader toggle={toggleSucces}>Success</ModalHeader>
+				<ModalBody>
+					<Form>
+						<FormGroup>
+							<Label for="success">Form submitted successfully! I will get back to you within 24 hours.</Label>
+						</FormGroup>
+					</Form>
+				</ModalBody>
+			</Modal>
 
 			<Toast isOpen={failure} color="danger">
-				<ToastHeader toggle={() => setFail(false)}>Success</ToastHeader>
+				<ToastHeader toggle={() => setFailure(false)}>Error</ToastHeader>
 				<ToastBody>
 					There was a problem submitting your request. Please try again.
 				</ToastBody>

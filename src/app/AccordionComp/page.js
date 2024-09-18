@@ -78,9 +78,9 @@ export default function AccordionComp () {
 							right skills and mindset to embrace the life you've always
 							envisioned and deserve.
 						</p>
-						<Link href="/contact" passHref>
-							<Button color="primary" size="lg">
-								Contact Me
+						<Link href="/ContactForm" passHref>
+							<Button className={styles.ctaButton}>
+								Get In Touch
 							</Button>
 						</Link>
 					</AccordionBody>

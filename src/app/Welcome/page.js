@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Welcome() {
-
 	return (
 		<Container className={styles.welcome}>
 			<Row className={styles.topRow}>
@@ -19,20 +18,23 @@ export default function Welcome() {
 				</Col>
 				<Col xs={6} className={styles.intro}>
 					<p>
-						Cara is a Licensed Mental Health Therapist and Qualified Supervisor
-						in Florida, with a Master's of Science from the University of
-						Massachusetts Boston. Recognized in November 2021 as the top
-						therapist at a well-known teletherapy platform for her exemplary
-						client satisfaction and high-quality care, she specializes in
-						treating depression, anxiety disorders, PTSD, and adjustment
-						disorders. Cara takes a holistic and individualized approach to
-						therapy, combining evidence-based techniques with a compassionate
-						and empathetic style. She creates a caring, safe, and non-judgmental
-						space where clients can explore their thoughts and feelings, develop
-						coping strategies, and foster personal growth. Cara is certified in
-						trauma-informed care, ensuring sensitivity to the impact of trauma
-						on her clients' lives. For more information, see the details
-						below and visit the Therapy tab.
+						I am a Licensed Mental Health Therapist and Qualified Supervisor in
+						Florida, with a Master's of Science from the University of
+						Massachusetts Boston. I was recognized in November 2021 as the top
+						therapist at a well-known teletherapy platform for exemplary client
+						satisfaction and high-quality care. I specialize in treating
+						depression, anxiety disorders, PTSD, and adjustment disorders. I
+						take a <span className={styles.tooltip}>holistic</span> and
+						individualized approach to therapy, combining evidence-based
+						techniques with a compassionate and empathetic style. I value
+						creating a caring, safe, and non-judgmental space where clients can
+						explore their thoughts and feelings, develop coping strategies, and
+						foster personal growth. I am certified in trauma-informed care,
+						ensuring sensitivity to the impact of trauma on a clients' life.
+					</p>
+					<p>
+						For more information, see the details below and visit the{" "}
+						<Link href="/ContactForm">Therapy</Link> tab.
 					</p>
 					<Link href="/ContactForm">
 						<Button className={styles.ctaButton}>Contact Now</Button>

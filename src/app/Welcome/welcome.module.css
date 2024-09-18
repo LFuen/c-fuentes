@@ -15,6 +15,48 @@
     flex-direction: column;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    content: "A holistic approach considers the whole person, including their physical, mental, emotional, and social factors.";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s; 
+}
+
+
+.intro a {
+    text-decoration: none;
+    color: #ff8dab;
+}
+
+.intro p {
+    margin-bottom: 2rem;
+}
+
+
+
 .topRow h4 {
     font-weight: bold;
     color: rgb(105, 105, 105);

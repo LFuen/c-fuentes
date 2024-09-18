@@ -115,29 +115,29 @@ export default function Supervision() {
 					<Col>
 						<p>
 							I began my mental health career in 2015 as a Mental Health
-							Specialist in the psychotic disorders' inpatient unit at
-							McLean Hospital in Belmont, MA. In 2018, while pursuing my
-							master's degree at the University of Massachusetts Boston in
-							Mental Health Counseling, I interned at an outpatient counseling
-							center in Norwell, MA. There, I provided individual therapy for
-							children, adolescents, and adults facing various mental health
-							conditions, including depression, anxiety, substance abuse
-							disorders, borderline personality disorder, and PTSD. At this
-							outpatient center, I additionally led group therapy sessions for
-							adults in the Partial Hospitalization Program (PHP) and Intensive
-							Outpatient Program (IOP). After completing my degree in 2019, I
-							was promoted to Coordinator and Lead Therapist of the Substance
-							Abuse IOP at the same facility.
+							Specialist in the psychotic disorders' inpatient unit at McLean
+							Hospital in Belmont, MA. In 2018, while pursuing my master's
+							degree at the University of Massachusetts Boston in Mental Health
+							Counseling, I interned at an outpatient counseling center in
+							Norwell, MA. There, I provided individual therapy for children,
+							adolescents, and adults facing various mental health conditions,
+							including depression, anxiety, substance abuse disorders,
+							borderline personality disorder, and PTSD. At this outpatient
+							center, I additionally led group therapy sessions for adults in
+							the Partial Hospitalization Program (PHP) and Intensive Outpatient
+							Program (IOP). After completing my degree in 2019, I was promoted
+							to Coordinator and Lead Therapist of the Substance Abuse IOP at
+							the same facility.
 						</p>
 						<p>
-							In 2020, I moved to Florida and began working for Children's
-							Home Society (CHS) in Miami, providing therapy to children and
-							families referred by the Department of Children and Families
-							(DCF). Upon becoming a licensed mental health counselor in 2021, I
-							began treating adult clients via telehealth and was recognized as
-							a top therapist at a major teletherapy company. I now run my
-							private practice via telehealth, specializing in treating adults
-							with depression, anxiety disorders, trauma, grief and loss, and
+							In 2020, I moved to Florida and began working for Children's Home
+							Society (CHS) in Miami, providing therapy to children and families
+							referred by the Department of Children and Families (DCF). Upon
+							becoming a licensed mental health counselor in 2021, I began
+							treating adult clients via telehealth and was recognized as a top
+							therapist at a major teletherapy company. I now run my private
+							practice via telehealth, specializing in treating adults with
+							depression, anxiety disorders, trauma, grief and loss, and
 							adjustment disorders, while also providing in-home counseling for
 							older adults. My diverse experience spans multiple populations and
 							treatment levels. See below to learn more about my supervision
@@ -191,15 +191,15 @@ export default function Supervision() {
 							appropriate for you.
 						</p>
 						<p>
-							Together, we'll work towards fostering your growth and
-							building a strong foundation for your practice. In supervision
-							sessions, I prioritize creating a supportive and open environment
-							where you feel comfortable discussing challenges and successes
-							alike. My collaborative approach encourages self-reflection and
-							ongoing learning, allowing you to develop your therapeutic style
-							and skills. By addressing both your strengths and areas for
-							growth, we aim to build a well-rounded foundation that will serve
-							you throughout your career in mental health counseling.
+							Together, we'll work towards fostering your growth and building a
+							strong foundation for your practice. In supervision sessions, I
+							prioritize creating a supportive and open environment where you
+							feel comfortable discussing challenges and successes alike. My
+							collaborative approach encourages self-reflection and ongoing
+							learning, allowing you to develop your therapeutic style and
+							skills. By addressing both your strengths and areas for growth, we
+							aim to build a well-rounded foundation that will serve you
+							throughout your career in mental health counseling.
 						</p>
 					</Col>
 
@@ -240,14 +240,13 @@ export default function Supervision() {
 			<article className={styles.bottomCTA}>
 				<h2>Ready to Start Your Journey?</h2>
 				<p>
-					If you're ready to grow as a therapist with dedicated and
-					personalized supervision, let's connect.
+					If you're ready to grow as a therapist with dedicated and personalized
+					supervision, let's connect.
 				</p>
 				<p>
 					I offer supervision services via <strong>Doxy.me</strong>, at a rate
 					of
-					<strong>
-						{" "}
+					<strong>{" "}
 						<u>$75 per hour session</u>
 					</strong>
 					, ensuring you receive the highest quality guidance and support.

@@ -98,34 +98,6 @@ ul.navMenu {
     justify-content: space-around; 
 }
 
-.navItem.dropdown ul.dropdownMenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background: none;
-    padding: 0 ;
-    margin: 0;
-    list-style: none;
-}
-
-.navItem.dropdown:hover ul.dropdownMenu {
-    display: block;
-}
-
-.navItem.dropdown ul.dropdownMenu li {
-    padding: .8rem 1.3rem;
-}
-
-.navItem.dropdown ul.dropdownMenu li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    display: block;
-}
-
-.navItem.dropdown ul.dropdownMenu li a:hover {
-    background-color: #f0f0f0;
-}
-
 .navItem :last-child {
     margin-left: 1rem;
 }
@@ -149,7 +121,7 @@ ul.navMenu {
         width: 100%;
         height: 90vh;
         position: absolute;
-        top: 6.1rem;
+        top: 4.6rem;
         opacity: .9;
         transition: all 0.5s ease;
     }
