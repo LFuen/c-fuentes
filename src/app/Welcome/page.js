@@ -7,8 +7,6 @@ import Link from "next/link";
 
 export default function Welcome() {
 
-	const apos = "'";
-
 	return (
 		<Container className={styles.welcome}>
 			<Row className={styles.topRow}>
@@ -22,7 +20,7 @@ export default function Welcome() {
 				<Col xs={6} className={styles.intro}>
 					<p>
 						Cara is a Licensed Mental Health Therapist and Qualified Supervisor
-						in Florida, with a Master{apos}s of Science from the University of
+						in Florida, with a Master's of Science from the University of
 						Massachusetts Boston. Recognized in November 2021 as the top
 						therapist at a well-known teletherapy platform for her exemplary
 						client satisfaction and high-quality care, she specializes in
@@ -33,7 +31,7 @@ export default function Welcome() {
 						space where clients can explore their thoughts and feelings, develop
 						coping strategies, and foster personal growth. Cara is certified in
 						trauma-informed care, ensuring sensitivity to the impact of trauma
-						on her clients{apos} lives. For more information, see the details
+						on her clients' lives. For more information, see the details
 						below and visit the Therapy tab.
 					</p>
 					<Link href="/ContactForm">
