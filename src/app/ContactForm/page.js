@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import jwt from "jsonwebtoken";
 import { Row, Col, ToastBody, ToastHeader, Modal, ModalHeader, ModalBody } from "reactstrap";
 import Image from "next/image";
 import {
@@ -44,31 +43,28 @@ export default function ContactForm () {
 			supervisionChecked,
 		};
 
-		const secretKey = process.env.NEXT_PUBLIC_SECRET_KEY;
-		const token = jwt.sign(formData, secretKey);
-
 		try {
-			const response = await fetch("/api/encrypt", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(formData),
+			const response = await fetch("/api/submit", {
+			  method: "POST",
+			  headers: {
+				"Content-Type": "application/json",
+			  },
+			  body: JSON.stringify({ formData }),
 			});
-
+		
 			if (response.ok) {
-				setSuccess(true);
-				setFailure(false);
+			  setSuccess(true);
+			  setFailure(false);
 			} else {
-				setFailure(true);
-				setSuccess(false);
+			  setFailure(true);
+			  setSuccess(false);
 			}
-		} catch (err) {
+		  } catch (err) {
 			setFailure(true);
 			setSuccess(false);
 			console.error("Error submitting form", err);
-		}
-	};
+		  }
+		};
 
 	const containerStyle = { width: "100%", height: "auto" };
 
@@ -101,7 +97,7 @@ export default function ContactForm () {
 					<Col className={styles.inputCol}>
 						<Form onSubmit={handleSubmit} className={styles.form}>
 							<Row className={styles.formRows}>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="Name">Name</Label>
 										<Input
@@ -114,7 +110,7 @@ export default function ContactForm () {
 										/>
 									</FormGroup>
 								</Col>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="Email">Email</Label>
 										<Input
@@ -127,7 +123,7 @@ export default function ContactForm () {
 										/>
 									</FormGroup>
 								</Col>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="Phone">Phone</Label>
 										<Input
@@ -140,7 +136,7 @@ export default function ContactForm () {
 										/>
 									</FormGroup>
 								</Col>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="City">City</Label>
 										<Input
@@ -155,7 +151,7 @@ export default function ContactForm () {
 							</Row>
 
 							<Row className={styles.formRows}>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="State">State</Label>
 										<Input
@@ -167,7 +163,7 @@ export default function ContactForm () {
 										/>
 									</FormGroup>
 								</Col>
-								<Col xs={6}>
+								<Col xs={6} className={styles.formColMain}>
 									<FormGroup>
 										<Label for="Zip">Zip</Label>
 										<Input
@@ -243,12 +239,12 @@ export default function ContactForm () {
 				</Row>
 			</section>
 
-			<Modal isOpen={success} toggle={toggleSucces}>
-				<ModalHeader toggle={toggleSucces}>Success</ModalHeader>
+			<Modal isOpen={success} toggle={toggleSucces} className={styles.modal}>
+				<ModalHeader toggle={toggleSucces} className={styles.modalHeader}>Thank You For Reaching Out!</ModalHeader>
 				<ModalBody>
 					<Form>
 						<FormGroup>
-							<Label for="success">Form submitted successfully! I will get back to you within 24 hours.</Label>
+							<Label for="success">I will get back to you within 24 hours.</Label>
 						</FormGroup>
 					</Form>
 				</ModalBody>

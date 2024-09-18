@@ -45,7 +45,7 @@
     justify-content: center;
 }
 
-.formRows {
+.formRows{
     width: 100%;
 }
 
@@ -149,6 +149,21 @@
     border-radius: 3rem;
   }
 
+  .modal {
+    font-family: "Merienda", sans-serif;
+    text-align: center;
+}
+
+.modalHeader {
+        border-bottom: none;
+        text-align: center;
+        color: #ff8dab;
+}
+
+.modalHeader .btn-close {
+    color: #ff8dab !important;
+}
+
   @media (max-width: 1020px) {
     .formContainer {
         margin: 0 ;
@@ -189,7 +204,7 @@
         width: 100%;
     }
 
-    .formRows>.col-6 {
+    .formColMain {
         width: 100%;
     }
   }
