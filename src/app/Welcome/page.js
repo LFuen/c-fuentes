@@ -34,7 +34,7 @@ export default function Welcome() {
 					</p>
 					<p>
 						For more information, see the details below and visit the{" "}
-						<Link href="/ContactForm">Therapy</Link> tab.
+						<Link href="/Therapy">Therapy</Link> tab.
 					</p>
 					<Link href="/ContactForm">
 						<Button className={styles.ctaButton}>Contact Now</Button>
