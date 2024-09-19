@@ -12,6 +12,7 @@ import {
 	Toast,
 } from "reactstrap";
 import styles from "./contactForm.module.css";
+import map from "./images/areaMap.png";
 
 export default function ContactForm () {
 	const [name, setName] = useState("");
@@ -69,14 +70,13 @@ export default function ContactForm () {
 	const containerStyle = { width: "100%", height: "auto" };
 
 	const LocationMap = () => {
-		const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=27.2730,-80.3582&zoom=10&size=600x400&markers=color:red%7Clabel:S%7C27.2730,-80.3582&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`;
 
 		return (
 			<Container fluid className="contact-page">
 				<Row>
 					<Col xs={12}>
 						<Image
-							src={mapUrl}
+							src={map}
 							alt="Our location on Google Maps"
 							style={containerStyle}
 							className={styles.locationMap}
@@ -233,8 +233,8 @@ export default function ContactForm () {
 
 					<Col className={styles.locationMap}>
 						<LocationMap />
-
-						<h6>* Serving <strong>all</strong> of the State of Florida</h6>
+						<h6>Based out of Port St. Lucie, FL</h6>						
+						<h6>** Serving <strong>all</strong> of the State of Florida</h6>
 					</Col>
 				</Row>
 			</section>
