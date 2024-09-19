@@ -13,8 +13,8 @@ export default async function handler(req, res) {
     const sesClient = new SESClient({ 
       region: 'us-east-1',
       credentials: {
-        accessKeyId: secrets.AWS_ACCESS_KEY_ID_PROD,
-        secretAccessKey: secrets.AWS_SECRET_ACCESS_KEY_PROD
+        accessKeyId: secrets.AWS_ACCESS_KEY_ID_PROD, // remove '_PROD' for local development
+        secretAccessKey: secrets.AWS_SECRET_ACCESS_KEY_PROD // remove '_PROD' for local development
       }
     });
 
