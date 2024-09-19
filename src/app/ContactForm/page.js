@@ -64,6 +64,7 @@ export default function ContactForm () {
 			setFailure(true);
 			setSuccess(false);
 			console.error("Error submitting form", err);
+			console.log("Error submitting form - contactForm", err);
 		  }
 		};
 
@@ -196,7 +197,7 @@ export default function ContactForm () {
 							<Row className={styles.formRowService}>
 								<Col>
 									<FormGroup check className={styles.formGroupService}>
-										<Col xs={2} className={styles.services}>
+										<Col xs={6} className={styles.services}>
 											<Input
 												id="Therapy"
 												name="Therapy"
@@ -209,7 +210,7 @@ export default function ContactForm () {
 											</Label>
 										</Col>
 
-										<Col xs={2} className={styles.services}>
+										<Col xs={6} className={styles.services}>
 											<Input
 												id="Supervision"
 												name="Supervision"

@@ -21,6 +21,7 @@ import {
       const secrets = JSON.parse(response.SecretString);
       return secrets;
     } catch (error) {
+      console.log('Error retrieving secret:', error);
       console.error('Error retrieving secret:', error);
       throw error;
     }
