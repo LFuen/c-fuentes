@@ -4,19 +4,17 @@ import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     // Respond with 405 Method Not Allowed for any non-POST requests
-    return res.status(405).json({ error: 'Method not allowed' });
+    return res.status(405).json({ error: 'POST method not allowed.' });
   }
 
   try {
-    // Fetch AWS secrets
     const secrets = await getSecrets();
 
-    // Initialize SES Client
     const sesClient = new SESClient({ 
       region: 'us-east-1',
       credentials: {
-        accessKeyId: secrets.AWS_ACCESS_KEY_ID,
-        secretAccessKey: secrets.AWS_SECRET_ACCESS_KEY
+        accessKeyId: secrets.AWS_ACCESS_KEY_ID_PROD,
+        secretAccessKey: secrets.AWS_SECRET_ACCESS_KEY_PROD
       }
     });
 
