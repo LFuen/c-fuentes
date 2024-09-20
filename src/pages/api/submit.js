@@ -9,14 +9,19 @@ export default async function handler(req, res) {
 
   try {
     const secrets = await getSecrets();
+    console.log('SECRETS:', secrets);
+
+    const isProd = process.env.NODE_ENV === 'production';
 
     const sesClient = new SESClient({ 
       region: 'us-east-1',
       credentials: {
-        accessKeyId: secrets.AWS_ACCESS_KEY_ID_PROD, // remove '_PROD' for local development
-        secretAccessKey: secrets.AWS_SECRET_ACCESS_KEY_PROD // remove '_PROD' for local development
+        accessKeyId: isProd ? secrets.AWS_ACCESS_KEY_ID_PROD: secrets.AWS_ACCESS_KEY_ID, // remove '_PROD' for local development
+        secretAccessKey: isProd ? secrets.AWS_SECRET_ACCESS_KEY_PROD : secrets.AWS_SECRET_ACCESS_KEY // remove '_PROD' for local development
       }
     });
+
+    console.log('SES Client initialized:', sesClient);
 
     const { formData } = req.body;
     const serviceType = formData.therapyChecked ? 'Client' : 'Supervisee';
