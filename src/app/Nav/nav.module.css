@@ -4,7 +4,7 @@
     font-size: 1.2rem;
     background-color: #fff2f2;
     border-bottom: 2px solid rgb(255, 139, 139);
-    z-index: 1;    
+    z-index: 100;    
     top: 0;
     position: sticky;
     padding-top: .01rem;
