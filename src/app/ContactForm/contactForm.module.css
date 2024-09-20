@@ -164,6 +164,18 @@
     color: #ff8dab !important;
 }
 
+.toastBody {
+    text-align: center;
+    padding: 2rem;
+}
+
+.toastBody a {
+    padding-top: 3rem;
+    text-decoration: none;
+    color:#ff8dab;
+    font-weight: bold;
+}
+
   @media (max-width: 1020px) {
     .formContainer {
         margin: 0 ;

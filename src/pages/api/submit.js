@@ -54,7 +54,7 @@ export default async function handler(req, res) {
   } catch (error) {
     console.log('Error sending email:', error);
     console.error('Error sending email:', error);
-    res.status(500).json({ error: 'Error sending email' });
+    res.status(500).json({ error: 'Error sending email (on the backend)' });
   }
 }
 

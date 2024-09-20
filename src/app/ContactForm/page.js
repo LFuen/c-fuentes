@@ -13,6 +13,7 @@ import {
 } from "reactstrap";
 import styles from "./contactForm.module.css";
 import map from "./images/areaMap.png";
+import Link from "next/link";
 
 export default function ContactForm () {
 	const [name, setName] = useState("");
@@ -26,7 +27,7 @@ export default function ContactForm () {
 	const [supervisionChecked, setSupervisionChecked] = useState(false);
 
 	const [success, setSuccess] = useState(false);
-	const [failure, setFailure] = useState(false);
+	const [failure, setFailure] = useState(true);
 
 	const toggleSucces = () => setSuccess(!success);
 
@@ -235,7 +236,7 @@ export default function ContactForm () {
 					<Col className={styles.locationMap}>
 						<LocationMap />
 						<h6>Based out of Port St. Lucie, FL</h6>						
-						<h6>** Serving <strong>all</strong> of the State of Florida</h6>
+						<h6>** Only serving the State of Florida</h6>
 					</Col>
 				</Row>
 			</section>
@@ -253,8 +254,14 @@ export default function ContactForm () {
 
 			<Toast isOpen={failure} color="danger">
 				<ToastHeader toggle={() => setFailure(false)}>Error</ToastHeader>
-				<ToastBody>
-					There was a problem submitting your request. Please try again.
+				<ToastBody className={styles.toastBody}>
+					<p>
+						Oh no, there was a problem submitting your request. Please try again, or email me at: 
+					</p>
+					
+					<Link href="mailto:contact@cfuentherapy.com">
+						{" "}Contact@CFuenTherapy.com
+							</Link>
 				</ToastBody>
 			</Toast>
 		</Container>
