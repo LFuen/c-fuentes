@@ -1,6 +1,14 @@
 "use client";
 import { useState } from "react";
-import { Row, Col, ToastBody, ToastHeader, Modal, ModalHeader, ModalBody } from "reactstrap";
+import {
+	Row,
+	Col,
+	ToastBody,
+	ToastHeader,
+	Modal,
+	ModalHeader,
+	ModalBody,
+} from "reactstrap";
 import Image from "next/image";
 import {
 	Button,
@@ -15,7 +23,7 @@ import styles from "./contactForm.module.css";
 import map from "./images/areaMap.png";
 import Link from "next/link";
 
-export default function ContactForm () {
+export default function ContactForm() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [phone, setPhone] = useState("");
@@ -30,6 +38,7 @@ export default function ContactForm () {
 	const [failure, setFailure] = useState(false);
 
 	const toggleSucces = () => setSuccess(!success);
+	const toggleFailure = () => setFailure(!failure);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -47,32 +56,31 @@ export default function ContactForm () {
 
 		try {
 			const response = await fetch("/api/submit", {
-			  method: "POST",
-			  headers: {
-				"Content-Type": "application/json",
-			  },
-			  body: JSON.stringify({ formData }),
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ formData }),
 			});
-		
+
 			if (response.ok) {
-			  setSuccess(true);
-			  setFailure(false);
+				setSuccess(true);
+				setFailure(false);
 			} else {
-			  setFailure(true);
-			  setSuccess(false);
+				setFailure(true);
+				setSuccess(false);
 			}
-		  } catch (err) {
+		} catch (err) {
 			setFailure(true);
 			setSuccess(false);
 			console.error("Error submitting form", err);
 			console.log("Error submitting form - contactForm", err);
-		  }
-		};
+		}
+	};
 
 	const containerStyle = { width: "100%", height: "auto" };
 
 	const LocationMap = () => {
-
 		return (
 			<Container fluid className="contact-page">
 				<Row>
@@ -229,42 +237,57 @@ export default function ContactForm () {
 								</Col>
 							</Row>
 
-							<Button className={styles.ctaButton} type="submit">Submit</Button>
+							<Button className={styles.ctaButton} type="submit">
+								Submit
+							</Button>
 						</Form>
 					</Col>
 
 					<Col className={styles.locationMap}>
 						<LocationMap />
-						<h6>Based out of Port St. Lucie, FL</h6>						
+						<h6>Based out of Port St. Lucie, FL</h6>
 						<h6>** Only serving the State of Florida</h6>
 					</Col>
 				</Row>
 			</section>
 
 			<Modal isOpen={success} toggle={toggleSucces} className={styles.modal}>
-				<ModalHeader toggle={toggleSucces} className={styles.modalHeader}>Thank You For Reaching Out!</ModalHeader>
+				<ModalHeader toggle={toggleSucces} className={styles.modalHeader}>
+					Thank You For Reaching Out!
+				</ModalHeader>
 				<ModalBody>
 					<Form>
 						<FormGroup>
-							<Label for="success">I will get back to you within 24 hours.</Label>
+							<Label for="success">
+								I will get back to you within 24 hours.
+							</Label>
 						</FormGroup>
 					</Form>
 				</ModalBody>
 			</Modal>
 
-			<Toast isOpen={failure} color="danger">
-				<ToastHeader toggle={() => setFailure(false)}>Error</ToastHeader>
-				<ToastBody className={styles.toastBody}>
-					<p>
-						Oh no, there was a problem submitting your request. Please try again, or email me at: 
-					</p>
-					
-					<Link href="mailto:contact@cfuentherapy.com">
-						{" "}Contact@CFuenTherapy.com
-							</Link>
-				</ToastBody>
-			</Toast>
+			<Modal isOpen={failure} toggle={toggleFailure} className={styles.modal}>
+				<ModalHeader toggle={toggleFailure} className={styles.modalHeader}>
+					Uh Oh!
+				</ModalHeader>
+				<ModalBody className={styles.modalFail}>
+					<Form>
+						<FormGroup>
+							<Label for="failure">
+								{" "}
+								<p>
+									Oh no, there was a problem submitting your request. Please try
+									again, or email me at:
+								</p>
+								<Link href="mailto:contact@cfuentherapy.com">
+									{" "}
+									Contact@CFuenTherapy.com
+								</Link>
+							</Label>
+						</FormGroup>
+					</Form>
+				</ModalBody>
+			</Modal>
 		</Container>
 	);
-};
-
+}
