@@ -27,7 +27,7 @@ export default function ContactForm () {
 	const [supervisionChecked, setSupervisionChecked] = useState(false);
 
 	const [success, setSuccess] = useState(false);
-	const [failure, setFailure] = useState(true);
+	const [failure, setFailure] = useState(false);
 
 	const toggleSucces = () => setSuccess(!success);
 
