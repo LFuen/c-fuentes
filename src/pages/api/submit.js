@@ -39,9 +39,9 @@ export default async function handler(req, res) {
               Phone: ${formData.phone}
               City: ${formData.city}
               State: ${formData.state}
-              Zip: ${formData.zip}
-              Message: ${formData.message}
+              Zip: ${formData.zip}              
               Service Requested: ${formData.therapyChecked ? 'Therapy' : 'Supervision'}
+              Message: ${formData.message}
             `,
           },
         },
