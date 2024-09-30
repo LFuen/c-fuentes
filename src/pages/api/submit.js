@@ -1,6 +1,20 @@
 import { getSecrets } from '../../utils/aws_secrets';
 import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
+
+function enableCors(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', 'https://www.cfuentherapy.com');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return true;
+  }
+  return false;
+
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     // Respond with 405 Method Not Allowed for any non-POST requests
