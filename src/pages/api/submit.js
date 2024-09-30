@@ -11,13 +11,12 @@ export default async function handler(req, res) {
     const secrets = await getSecrets();
     console.log('SECRETS:', secrets);
 
-    const isProd = process.env.NODE_ENV === 'production';
 
     const sesClient = new SESClient({ 
       region: 'us-east-1',
       credentials: {
-        accessKeyId: isProd ? secrets.AWS_ACCESS_KEY_ID_PROD: secrets.AWS_ACCESS_KEY_ID, // remove '_PROD' for local development
-        secretAccessKey: isProd ? secrets.AWS_SECRET_ACCESS_KEY_PROD : secrets.AWS_SECRET_ACCESS_KEY // remove '_PROD' for local development
+        accessKeyId: secrets.AWS_ACCESS_KEY_ID,
+        secretAccessKey:  secrets.AWS_SECRET_ACCESS_KEY
       }
     });
 
