@@ -28,8 +28,8 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: 'contact@cfuentherapy.com',
-        pass: 'Hairl3$$M0n3y',
+        user: secrets.WORKMAIL_EMAIL,
+        pass: secrets.WORKMAIL_PASS,
       },
     });
 
