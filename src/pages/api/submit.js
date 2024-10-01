@@ -1,5 +1,5 @@
+import nodemailer from 'nodemailer';
 import { getSecrets } from '../../utils/aws_secrets';
-import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 
 export default async function handler(req, res) {
@@ -21,31 +21,27 @@ export default async function handler(req, res) {
 
   try {
     const secrets = await getSecrets();
-    console.log('SECRETS:', secrets);
 
 
-    const sesClient = new SESClient({ 
-      region: 'us-east-1',
-      credentials: {
-        accessKeyId: secrets.AWS_ACCESS_KEY_ID,
-        secretAccessKey:  secrets.AWS_SECRET_ACCESS_KEY
-      }
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.mail.us-east-1.awsapps.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'contact@cfuentherapy.com',
+        pass: 'Hairl3$$M0n3y',
+      },
     });
-
-    console.log('SES Client initialized:', sesClient);
 
     const { formData } = req.body;
     const serviceType = formData.therapyChecked ? 'Client' : 'Supervisee';
 
     // Set up email parameters
-    const params = {
-      Destination: {
-        ToAddresses: ['contact@cfuentherapy.com'],
-      },
-      Message: {
-        Body: {
-          Text: {
-            Data: `
+    const mailOptions = {
+      from: '"CFuen Therapy" <contact@cfuentherapy.com>',
+      to: secrets.WORKMAIL_EMAIL,
+      subject: `New ${serviceType} Inquiry`,
+      text:  `
               Name: ${formData.name}
               Email: ${formData.email}
               Phone: ${formData.phone}
@@ -55,22 +51,14 @@ export default async function handler(req, res) {
               Service Requested: ${formData.therapyChecked ? 'Therapy' : 'Supervision'}
               Message: ${formData.message}
             `,
-          },
-        },
-        Subject: { Data: `New ${serviceType} Submission` },
-      },
-      Source: 'contact@cfuentherapy.com',
     };
 
     // Send the email
-    const command = new SendEmailCommand(params);
-    await sesClient.send(command);
-    res.status(200).json({ success: true });
-
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({success: true});
   } catch (error) {
-    console.log('Error sending email:', error);
-    console.error('Error sending email:', error);
-    res.status(500).json({ error: 'Error sending email (on the backend)' });
+    console.error('Error submitting form', error);
+    res.status(500).json({ error: 'Error submitting form' });
   }
 }
 
