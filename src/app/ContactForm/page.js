@@ -3,8 +3,6 @@ import { useState } from "react";
 import {
 	Row,
 	Col,
-	ToastBody,
-	ToastHeader,
 	Modal,
 	ModalHeader,
 	ModalBody,
@@ -17,7 +15,6 @@ import {
 	Label,
 	Input,
 	Container,
-	Toast,
 } from "reactstrap";
 import styles from "./contactForm.module.css";
 import map from "./images/areaMap.png";

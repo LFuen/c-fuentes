@@ -4,7 +4,7 @@ import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 export default async function handler(req, res) {
   
-  res.setHeader('Access-Control-Allow-Origin', 'https://www.cfuentherapy.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://cfuentherapy.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
