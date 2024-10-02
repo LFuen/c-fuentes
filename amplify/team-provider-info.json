@@ -15,7 +15,7 @@
       "function": {
         "cfunTherapyLambda": {
           "deploymentBucketName": "amplify-cfuentherapy-dev-f6cf4-deployment",
-          "s3Key": "amplify-builds/cfunTherapyLambda-7838415851314d4a7a36-build.zip"
+          "s3Key": "amplify-builds/cfunTherapyLambda-37655a7635767967685a-build.zip"
         }
       },
       "api": {

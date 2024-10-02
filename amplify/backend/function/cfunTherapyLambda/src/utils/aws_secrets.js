@@ -1,11 +1,11 @@
-import {
+const {
     SecretsManagerClient,
     GetSecretValueCommand,
-  } from "@aws-sdk/client-secrets-manager";
+  } = require("@aws-sdk/client-secrets-manager");
   
   const secret_name = "cfuen-email";
   
-  export const getSecrets = async () => {
+ const getSecrets = async () => {
     const client = new SecretsManagerClient({
       region: "us-east-1",
     });
@@ -26,4 +26,6 @@ import {
       throw error;
     }
   };
+
+module.exports = { getSecrets };
   
