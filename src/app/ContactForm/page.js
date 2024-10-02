@@ -52,7 +52,7 @@ export default function ContactForm() {
 		};
 
 		try {
-			const response = await fetch("https://rvp5u4mlma.execute-api.us-east-1.amazonaws.com/dev", {
+			const response = await fetch("https://rvp5u4mlma.execute-api.us-east-1.amazonaws.com/dev/submit", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
