@@ -56,7 +56,7 @@ exports.handler = async (event) => {
 
     // Set up email parameters
     const mailOptions = {
-      from: 'Submission Inquiry',
+      from: '"CFuen Therapy" <contact@cfuentherapy.com>',
       to: secrets.WORKMAIL_EMAIL,
       subject: `New ${serviceType} Inquiry`,
       text: `
