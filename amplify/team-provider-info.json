@@ -15,11 +15,12 @@
       "function": {
         "cfunTherapyLambda": {
           "deploymentBucketName": "amplify-cfuentherapy-dev-f6cf4-deployment",
-          "s3Key": "amplify-builds/cfunTherapyLambda-647338627553384f7964-build.zip"
+          "s3Key": "amplify-builds/cfunTherapyLambda-426f5849777274796c43-build.zip"
         }
       },
       "api": {
-        "apib01a03d3": {}
+        "apib01a03d3": {},
+        "cfuenapi": {}
       }
     }
   }
