@@ -243,7 +243,7 @@ export default function ContactForm() {
 					<Col className={styles.locationMap}>
 						<LocationMap />
 						<h6>Based out of Port St. Lucie, FL</h6>
-						<h6>** Only serving the State of Florida</h6>
+						<h6><b>**</b> Only serving the <b><u>State of Florida</u></b></h6>
 					</Col>
 				</Row>
 			</section>

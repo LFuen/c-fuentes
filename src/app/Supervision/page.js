@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./supervision.module.css";
 import Image from "next/image";
 import ygt from "./images/gotThis.jpg";
+import joy from "./images/joy.jpg";
 
 export default function Supervision() {
 	const support = [
@@ -107,12 +108,12 @@ export default function Supervision() {
 				<span className={styles.title}>Supervision</span>
 			</h1>
 
-			<article className={styles.topBlurb}>
-				<Row className={styles.blurbRow}>
-					<Col>
-						<Image src={ygt} alt="The Grind" width={300} height={300} />
+			<article className={`d-flex mx-xs-2 mx-md-4 ${styles.blurb}`}>
+				<Row className={`d-flex flex-column flex-lg-row ${styles.blurbRow}`}>
+					<Col xs={12} lg={6} className="d-flex justify-content-center">
+						<Image src={joy} alt="Choose Joy" width={500} height={500} className="img-fluid" />
 					</Col>
-					<Col>
+					<Col xs={12} lg={6}>
 						<p>
 							I began my mental health career in 2015 as a Mental Health
 							Specialist in the psychotic disorders' inpatient unit at McLean
@@ -153,7 +154,7 @@ export default function Supervision() {
 				</Row>
 
 				<Row className={styles.techniqueRow}>
-					<Col xs={6} className={`${styles.techniqueColA}`}>
+					<Col xs={6} className={styles.techniqueColA}>
 						{col1.map((therapy) => (
 							<Card className={styles.techniqueCard} key={therapy.id}>
 								<CardHeader className={styles.cardHeader}>
@@ -175,9 +176,9 @@ export default function Supervision() {
 				</Row>
 			</article>
 
-			<article className={styles.midBlurb}>
-				<Row className={styles.blurbRow}>
-					<Col>
+			<article className={`mx-xs-2 mx-lg-4 ${styles.blurb}`}>
+				<Row className={`d-flex flex-column flex-lg-row ${styles.blurbRow}`}>
+					<Col xs={12} lg={6}>
 						<p>
 							As a qualified supervisor for MHC interns, I view supervision as
 							an evolving process that adapts to your growth and professional
@@ -203,8 +204,8 @@ export default function Supervision() {
 						</p>
 					</Col>
 
-					<Col>
-						<Image src={ygt} alt="You Got This" width={300} height={300} />
+					<Col xs={12} lg={6} className="d-flex justify-content-center">
+						<Image src={ygt} alt="You Got This" width={500} height={500} className="img-fluid" />
 					</Col>
 				</Row>
 			</article>
