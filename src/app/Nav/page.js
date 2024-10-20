@@ -15,7 +15,7 @@ export default function Nav() {
     const closeMenu = () => setClick(false);
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={styles.navbar} title="Navigation">
             <div className={styles.navRow}>
                 <div
                     className={styles.menuIcon}
