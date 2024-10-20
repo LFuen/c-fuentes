@@ -94,9 +94,9 @@
     display: flex;
     flex-direction: row;
     align-items: start;
+    justify-content: center;
     flex-wrap: nowrap;
     padding: 2rem 0;
-    width: 100%;
     text-align: center;
 }
 
@@ -331,7 +331,7 @@
     .techniqueRow {
         flex-direction: column;
         align-items: start;
-        width: 100%;
+        justify-content: center;
         flex-wrap: nowrap;
     }
 
