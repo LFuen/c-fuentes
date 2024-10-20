@@ -128,7 +128,7 @@ export default function Therapy() {
 					</blockquote>
 				</Col>
 				<Col>
-					<Link href="/ContactForm">
+					<Link href="/ContactForm" passHref>
 						<Button className={styles.ctaButton}>Contact Me</Button>
 					</Link>
 				</Col>
@@ -231,16 +231,16 @@ export default function Therapy() {
 							<CardText className={styles.cardText}>
 								<Row className={styles.treatRow}>
 									<Col xs={6} key="col1" className={styles.treatCol}>
-										{col5.map((treat) => (
-											<ul key={treat.id}>
-												<li key={treat.id}>{treat.name}</li>
-											</ul>
+									{col5.map((treat) => (
+										<ul key={`treat-${treat.id}`}>
+											<li>{treat.name}</li>
+										</ul>
 										))}
 									</Col>
 
 									<Col xs={6} key="col2" className={styles.treatCol}>
 										{col6.map((treat) => (
-											<ul key={treat.id}>
+											<ul key={`treat-${treat.id}`}>
 												<li key={treat.id}>{treat.name}</li>
 											</ul>
 										))}
@@ -283,7 +283,7 @@ export default function Therapy() {
 				<p>
 					<strong>**Must be a Florida resident over 18 years old.</strong>
 				</p>
-				<Link href="/ContactForm">
+				<Link href="/ContactForm" passHref>
 					<Button className={styles.ctaButton}>Let's Begin</Button>
 				</Link>
 			</article>

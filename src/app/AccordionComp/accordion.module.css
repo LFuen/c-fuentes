@@ -10,7 +10,7 @@
 }
 
 .accordionHeader button:not(.collapsed) {
-    color: #868686;
+    color: #000000;
     background-color: #ff8dab;
 }
 
@@ -30,7 +30,7 @@
     padding: 1rem 1.8rem;
     font-size: 1.2rem;
     border: none;
-    color: #868686;
+    color: #000000;
     background-color: #ff8dab;
     text-decoration: none;    
     z-index: 1;

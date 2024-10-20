@@ -54,7 +54,7 @@
     padding: 1rem 1.8rem;
     font-size: 1.2rem;
     border: none;
-    color: #868686;
+    color: #000000;
     background-color: #ff8dab;
     text-decoration: none;    
     z-index: 1;
@@ -125,7 +125,7 @@
 
 .cardHeader {
     background-color: #ff8dab;
-    color: #868686;
+    color: #000000;
     font-weight: bolder;
     border-radius: 0 !important;
     border: none;
@@ -190,7 +190,7 @@
 .treatHeader {
     display: flex;
     background-color: #ff8dab;
-    color: #868686;
+    color: #000000;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
     font-weight: bolder;
     font-size: 2.3rem;

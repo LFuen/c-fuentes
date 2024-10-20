@@ -11,7 +11,7 @@ export default function Hero() {
 				<p>Empowering individuals through personalized therapy sessions.</p>
 			</blockquote>
 			<Link href="/ContactForm">
-				<Button className={styles.ctaButton}>Contact Me</Button>
+				<Button className={styles.ctaButton} passhref>Contact Me</Button>
 			</Link>
 		</Row>
 	);

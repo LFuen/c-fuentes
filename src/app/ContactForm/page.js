@@ -276,7 +276,7 @@ export default function ContactForm() {
 									Oh no, there was a problem submitting your request. Please try
 									again, or email me at:
 								</p>
-								<Link href="mailto:contact@cfuentherapy.com">
+								<Link href="mailto:contact@cfuentherapy.com" passHref>
 									{" "}
 									Contact@CFuenTherapy.com
 								</Link>

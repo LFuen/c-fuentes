@@ -27,7 +27,7 @@ export default function Nav() {
                     <i className={click ? "bi bi-x" : "bi bi-list"} />
                 </div>
                 <div className={styles.navColA}>
-                    <Link href="/" onClick={closeMenu} className={styles.navbarLogo}>
+                    <Link href="/" onClick={closeMenu} className={styles.navbarLogo} passHref>
                         <Image src={logo} alt="Cara Fuentes - LMHC, Supervisor" />
                     </Link>
                 </div>
@@ -61,7 +61,7 @@ export default function Nav() {
                             </Link>
                         </li>
                         <li className={styles.navItem}>
-                            <Link href="/ContactForm" onClick={closeMenu}>
+                            <Link href="/ContactForm" onClick={closeMenu} passhref>
                                 <Button className={styles.ctaButton}>Contact Me</Button>
                             </Link>
                         </li>

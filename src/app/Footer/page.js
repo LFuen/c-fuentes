@@ -21,7 +21,7 @@ export default function Footer() {
 						<p>Contact</p>
 					</Col>
 					<Col className={styles.address}>
-						<Link href={"mailto:Contact@CFuenTherapy.com"}>
+						<Link href={"mailto:Contact@CFuenTherapy.com"} passHref>
 							Contact@CFuenTherapy.com
 						</Link>
 						<p>Cara Fuentes, LMHC - Supervisor</p>

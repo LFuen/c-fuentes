@@ -98,7 +98,7 @@ export default function Supervision() {
 					</blockquote>
 				</Col>
 				<Col>
-					<Link href="/ContactForm">
+					<Link href="/ContactForm" passhref>
 						<Button className={styles.ctaButton}>Contact Me</Button>
 					</Link>
 				</Col>
@@ -255,7 +255,7 @@ export default function Supervision() {
 				<p>
 					<strong>** FLORIDA mental health interns only.</strong>
 				</p>
-				<Link href="/ContactForm">
+				<Link href="/ContactForm" passhref>
 					<Button className={styles.ctaButton}>Let's Begin</Button>
 				</Link>
 			</article>
