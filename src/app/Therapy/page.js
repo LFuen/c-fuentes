@@ -34,7 +34,7 @@ export default function Therapy() {
 		{
 			name: "Trauma",
 			id: 4,
-			gist: "Trauma is a response to a deeply distressing or disturbing event that overwhelms a person's ability to cope, leaving lasting emotional and psychological effects. It can result from experiences such as abuse, accidents, or significant loss. Symptoms of trauma may include flashbacks, anxiety, emotional numbness, and difficulty trusting others.",
+			gist: "Trauma is a response to a deeply distressing or disturbing event that overwhelms a person's ability to cope, often leaving lasting emotional, psychological, and even physical effects. It can result from experiences such as abuse, accidents, natural disasters, or significant loss. Symptoms of trauma may include flashbacks, anxiety, emotional numbness, difficulty trusting others, and trouble sleeping.",
 		},
 		{
 			name: "Obsessive-Compulsive Disorder (OCD)",
